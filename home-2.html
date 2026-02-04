@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberSecure Academy - Start Your Cybersecurity Career Journey">
+    <meta name="keywords" content="cybersecurity career, training, certification, learning path">
+    <meta name="author" content="CyberSecure Academy">
+    <title>CyberSecure Academy - Your Cybersecurity Career Starts Here</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand brand-identity" href="index.html">
+                    <i class="bi bi-shield-check brand-icon"></i> CyberSecure <span class="brand-suffix">Academy</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home-2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-dashboard-btn" href="dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                        <button class="theme-toggle btn btn-outline-light btn-sm me-3" id="themeToggle">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                        <a href="login.html" class="btn btn-outline-light btn-sm me-2">Login</a>
+                        <a href="register.html" class="btn btn-success btn-sm">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Offcanvas Menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title"><i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                        class="brand-suffix">Academy</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home-2.html">Home 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dashboard-btn" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="btn btn-success w-100">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-10 mx-auto text-center hero-content animate-fadeInUp">
+                        <div class="mb-4">
+                            <i class="bi bi-shield-lock"
+                                style="font-size: 5rem; color: var(--accent-green); opacity: 0.8;"></i>
+                        </div>
+                        <h1 class="hero-title">Start Your Cybersecurity Career Journey</h1>
+                        <p class="hero-subtitle">From beginner to certified professional. Your path to a rewarding
+                            career in cybersecurity starts here.</p>
+                        <div class="d-flex gap-3 flex-wrap justify-content-center">
+                            <a href="#courses" class="btn btn-primary btn-lg text-center">Browse Courses</a>
+                            <a href="#roadmap" class="btn btn-outline-light btn-lg">Career Roadmap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Course Highlights -->
+        <section id="courses" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold animate-fadeInUp">Featured Courses</h2>
+                    <p class="lead text-muted animate-fadeInUp">Start with the basics and advance to expert level</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6 animate-fadeInUp">
+                        <div class="service-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-5">
+                                    <div class="img-container p-3" style="height: 200px;">
+                                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+                                            alt="Cybersecurity Fundamentals" class="img-aligned rounded-3">
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h4>Cybersecurity Fundamentals</h4>
+                                        <p>Perfect for beginners. Learn core concepts, terminology, and basic security
+                                            practices.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-success">Beginner</span>
+                                            <a href="service-details.html" class="btn btn-outline-primary btn-sm">Start
+                                                Learning</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 animate-fadeInUp">
+                        <div class="service-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-5">
+                                    <div class="img-container p-3" style="height: 200px;">
+                                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+                                            alt="Security+ Prep" class="img-aligned rounded-3">
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h4>Security+ Certification Prep</h4>
+                                        <p>Comprehensive preparation for CompTIA Security+ certification exam.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-warning">Intermediate</span>
+                                            <a href="service-details.html" class="btn btn-outline-primary btn-sm">Start
+                                                Learning</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 animate-fadeInUp">
+                        <div class="service-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-5">
+                                    <div class="img-container p-3" style="height: 200px;">
+                                        <img src="https://images.unsplash.com/photo-1624969862644-791f3dc98927?auto=format&fit=crop&q=80&w=800"
+                                            alt="Ethical Hacking" class="img-aligned rounded-3">
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h4>Ethical Hacking Masterclass</h4>
+                                        <p>Advanced penetration testing techniques and vulnerability assessment.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-danger">Advanced</span>
+                                            <a href="service-details.html" class="btn btn-outline-primary btn-sm">Start
+                                                Learning</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 animate-fadeInUp">
+                        <div class="service-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-5">
+                                    <div class="img-container p-3" style="height: 200px;">
+                                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800"
+                                            alt="Cloud Security" class="img-aligned rounded-3">
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h4>Cloud Security Specialist</h4>
+                                        <p>Master AWS, Azure, and Google Cloud security best practices.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="badge bg-warning">Intermediate</span>
+                                            <a href="service-details.html" class="btn btn-outline-primary btn-sm">Start
+                                                Learning</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Roadmap -->
+        <section id="roadmap" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold">Your Career Roadmap</h2>
+                    <p class="lead text-muted">Step-by-step path to becoming a cybersecurity professional</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="timeline">
+                            <div class="timeline-item animate-fadeInLeft">
+                                <div class="timeline-marker">
+                                    <i class="bi bi-1-circle-fill"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Foundation Building</h4>
+                                    <p>Start with cybersecurity fundamentals, networking basics, and security
+                                        principles.</p>
+                                    <small class="text-muted">Duration: 2-3 months</small>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item animate-fadeInRight">
+                                <div class="timeline-marker">
+                                    <i class="bi bi-2-circle-fill"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Get Certified</h4>
+                                    <p>Earn entry-level certifications like Security+ or CCNA Security.</p>
+                                    <small class="text-muted">Duration: 1-2 months</small>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item animate-fadeInLeft">
+                                <div class="timeline-marker">
+                                    <i class="bi bi-3-circle-fill"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Specialize</h4>
+                                    <p>Choose your path: Ethical Hacking, Network Security, or Cloud Security.</p>
+                                    <small class="text-muted">Duration: 3-6 months</small>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item animate-fadeInRight">
+                                <div class="timeline-marker">
+                                    <i class="bi bi-4-circle-fill"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Advanced Certification</h4>
+                                    <p>Pursue advanced certifications like CISSP, CEH, or OSCP.</p>
+                                    <small class="text-muted">Duration: 6-12 months</small>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item animate-fadeInLeft">
+                                <div class="timeline-marker">
+                                    <i class="bi bi-5-circle-fill"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Career Launch</h4>
+                                    <p>Apply for cybersecurity roles with confidence and practical experience.</p>
+                                    <small class="text-muted">Ready for your dream job!</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="counter-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6 text-center mb-4">
+                        <div class="counter-number" data-target="10000" data-suffix="+">0</div>
+                        <div class="counter-label">Students Enrolled</div>
+                    </div>
+                    <div class="col-md-3 col-6 text-center mb-4">
+                        <div class="counter-number" data-target="95" data-suffix="+">0</div>
+                        <div class="counter-label">Success Rate %</div>
+                    </div>
+                    <div class="col-md-3 col-6 text-center mb-4">
+                        <div class="counter-number" data-target="500" data-suffix="+">0</div>
+                        <div class="counter-label">Expert Instructors</div>
+                    </div>
+                    <div class="col-md-3 col-6 text-center mb-4">
+                        <div class="counter-number" data-target="50" data-suffix="+">0</div>
+                        <div class="counter-label">Courses Available</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Resources -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold">Learning Resources</h2>
+                    <p class="lead text-muted">Everything you need to succeed in your cybersecurity journey</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-play-circle" style="font-size: 3rem; color: var(--cyber-blue);"></i>
+                            </div>
+                            <h4>Video Tutorials</h4>
+                            <p>HD video lessons with practical demonstrations and real-world examples.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-terminal" style="font-size: 3rem; color: var(--cyber-blue);"></i>
+                            </div>
+                            <h4>Virtual Labs</h4>
+                            <p>Hands-on practice in safe, isolated environments with real tools.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-file-text" style="font-size: 3rem; color: var(--cyber-blue);"></i>
+                            </div>
+                            <h4>Study Materials</h4>
+                            <p>Comprehensive guides, cheat sheets, and reference documents.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-people" style="font-size: 3rem; color: var(--cyber-blue);"></i>
+                            </div>
+                            <h4>Community Support</h4>
+                            <p>Join forums, study groups, and connect with fellow learners.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="bg-primary text-white rounded-3 p-5 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Ready to Transform Your Career?</h2>
+                    <p class="lead mb-4">Join thousands of successful cybersecurity professionals who started their
+                        journey with us.</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="register.html" class="btn btn-success btn-lg">Start Free Trial</a>
+                        <a href="contact.html" class="btn btn-light btn-lg">Talk to Advisor</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4 class="brand-identity"><i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                                class="brand-suffix">Academy</span></h4>
+                        <p>Leading provider of professional cybersecurity training and certification programs worldwide.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to get the latest cybersecurity news and course updates.</p>
+                        <form class="mt-3">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email">
+                                <button class="btn btn-success" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+
+            <div class="text-center">
+                <p>&copy; 2026 CyberSecure Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

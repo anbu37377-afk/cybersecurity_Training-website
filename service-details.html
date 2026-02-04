@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ethical Hacking Course - Comprehensive training program">
+    <meta name="keywords" content="ethical hacking, penetration testing, cybersecurity course">
+    <meta name="author" content="CyberSecure Academy">
+    <title>Ethical Hacking Course - CyberSecure Academy</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand brand-identity" href="index.html">
+                    <i class="bi bi-shield-check brand-icon"></i> CyberSecure <span class="brand-suffix">Academy</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home-2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-dashboard-btn" href="dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                        <button class="theme-toggle btn btn-outline-light btn-sm me-3" id="themeToggle">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                        <a href="login.html" class="btn btn-outline-light btn-sm me-2">Login</a>
+                        <a href="register.html" class="btn btn-success btn-sm">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Offcanvas Menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title"><i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                        class="brand-suffix">Academy</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="btn btn-success w-100">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-8 mx-auto text-center hero-content">
+                        <h1 class="hero-title animate-fadeInUp">Ethical Hacking Masterclass</h1>
+                        <p class="hero-subtitle animate-fadeInUp">Become a certified ethical hacker with hands-on
+                            penetration testing experience</p>
+                        <div class="d-flex gap-3 justify-content-center flex-wrap animate-fadeInUp">
+                            <span class="badge bg-danger fs-6">Advanced Level</span>
+                            <span class="badge bg-primary fs-6">CEH Preparation</span>
+                            <span class="badge bg-success fs-6">Hands-on Labs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Overview -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="animate-fadeInLeft">
+                            <h2 class="mb-4">Course Overview</h2>
+                            <div class="img-container mb-4 shadow rounded-3">
+                                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1200"
+                                    alt="Ethical Hacking Course" class="img-aligned">
+                            </div>
+                            <p class="lead">Master the art of ethical hacking and penetration testing with our
+                                comprehensive masterclass. Learn to think like a hacker to protect systems effectively.
+                            </p>
+
+                            <h4 class="mt-5 mb-3">What You'll Learn</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Advanced
+                                    penetration testing methodologies</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Web application
+                                    security testing</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Network
+                                    infrastructure penetration testing</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Social engineering
+                                    techniques</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Wireless network
+                                    security assessment</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Mobile application
+                                    security testing</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Cloud security
+                                    penetration testing</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i> Report writing and
+                                    documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="service-card animate-fadeInRight">
+                            <div class="card-body">
+                                <h4 class="mb-4">Course Details</h4>
+                                <div class="mb-3">
+                                    <strong>Duration:</strong> 12 weeks
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Level:</strong> Advanced
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Format:</strong> Online + Labs
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Certificate:</strong> Yes
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Language:</strong> English
+                                </div>
+                                <div class="mb-4">
+                                    <strong>Prerequisites:</strong>
+                                    <ul class="small mt-2">
+                                        <li>Network+ or equivalent</li>
+                                        <li>Basic Linux knowledge</li>
+                                        <li>Security+ recommended</li>
+                                    </ul>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <a href="register.html" class="btn btn-primary">Enroll Now</a>
+                                    <a href="pricing.html" class="btn btn-outline-primary">View Pricing</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold animate-fadeInUp">Course Curriculum</h2>
+                    <p class="lead text-muted animate-fadeInUp">Comprehensive modules covering all aspects of ethical
+                        hacking</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="accordion" id="curriculumAccordion">
+                            <!-- Module 1 -->
+                            <div class="accordion-item animate-fadeInUp">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#module1">
+                                        <strong>Module 1:</strong> Introduction to Ethical Hacking
+                                    </button>
+                                </h2>
+                                <div id="module1" class="accordion-collapse collapse show"
+                                    data-bs-parent="#curriculumAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Ethical hacking fundamentals and legal aspects</li>
+                                            <li>Hacker methodologies and attack frameworks</li>
+                                            <li>Setting up your penetration testing lab</li>
+                                            <li>Essential tools and software</li>
+                                            <li>Hands-on lab: Lab setup and basic reconnaissance</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 2 -->
+                            <div class="accordion-item animate-fadeInUp">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#module2">
+                                        <strong>Module 2:</strong> Reconnaissance and Scanning
+                                    </button>
+                                </h2>
+                                <div id="module2" class="accordion-collapse collapse"
+                                    data-bs-parent="#curriculumAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Passive and active reconnaissance techniques</li>
+                                            <li>Network scanning with Nmap</li>
+                                            <li>Vulnerability scanning methodologies</li>
+                                            <li>Enumeration techniques</li>
+                                            <li>Hands-on lab: Complete network reconnaissance</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 3 -->
+                            <div class="accordion-item animate-fadeInUp">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#module3">
+                                        <strong>Module 3:</strong> System Hacking
+                                    </button>
+                                </h2>
+                                <div id="module3" class="accordion-collapse collapse"
+                                    data-bs-parent="#curriculumAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Password cracking techniques</li>
+                                            <li>Privilege escalation methods</li>
+                                            <li>Executing applications and maintaining access</li>
+                                            <li>Covering tracks and evidence removal</li>
+                                            <li>Hands-on lab: Windows and Linux system exploitation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 4 -->
+                            <div class="accordion-item animate-fadeInUp">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#module4">
+                                        <strong>Module 4:</strong> Web Application Penetration Testing
+                                    </button>
+                                </h2>
+                                <div id="module4" class="accordion-collapse collapse"
+                                    data-bs-parent="#curriculumAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>OWASP Top 10 vulnerabilities</li>
+                                            <li>SQL injection and XSS attacks</li>
+                                            <li>Session management and authentication flaws</li>
+                                            <li>Web application firewalls bypass</li>
+                                            <li>Hands-on lab: Web application security assessment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 5 -->
+                            <div class="accordion-item animate-fadeInUp">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#module5">
+                                        <strong>Module 5:</strong> Network and Wireless Hacking
+                                    </button>
+                                </h2>
+                                <div id="module5" class="accordion-collapse collapse"
+                                    data-bs-parent="#curriculumAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Network protocol attacks</li>
+                                            <li>Wireless network security assessment</li>
+                                            <li>WiFi hacking techniques</li>
+                                            <li>Bluetooth and IoT device security</li>
+                                            <li>Hands-on lab: Wireless penetration testing</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 6 -->
+                            <div class="accordion-item animate-fadeInUp">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#module6">
+                                        <strong>Module 6:</strong> Social Engineering and Physical Security
+                                    </button>
+                                </h2>
+                                <div id="module6" class="accordion-collapse collapse"
+                                    data-bs-parent="#curriculumAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Social engineering psychology</li>
+                                            <li>Phishing and pretexting techniques</li>
+                                            <li>Physical security assessments</li>
+                                            <li>Shoulder surfing and tailgating</li>
+                                            <li>Hands-on lab: Social engineering simulation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold animate-fadeInUp">Choose Your Plan</h2>
+                    <p class="lead text-muted animate-fadeInUp">Flexible pricing options to suit your needs</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="pricing-card animate-fadeInUp">
+                            <div class="card-body text-center">
+                                <h4>Basic</h4>
+                                <div class="price">$299</div>
+                                <div class="price-period">one-time</div>
+                                <ul class="list-unstyled my-4">
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Course access</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Video tutorials
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Study materials
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Live labs</li>
+                                    <li class="mb-2"><i class="bi bi-x-circle text-danger"></i> Certificate</li>
+                                </ul>
+                                <a href="register.html" class="btn btn-outline-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="pricing-card featured animate-fadeInUp">
+                            <div class="card-header text-center">
+                                <h4 class="text-white">Professional</h4>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="price">$599</div>
+                                <div class="price-period">one-time</div>
+                                <ul class="list-unstyled my-4">
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Course access</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Video tutorials
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Study materials
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Live labs</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Certificate</li>
+                                </ul>
+                                <a href="register.html" class="btn btn-success">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="pricing-card animate-fadeInUp">
+                            <div class="card-body text-center">
+                                <h4>Enterprise</h4>
+                                <div class="price">$999</div>
+                                <div class="price-period">one-time</div>
+                                <ul class="list-unstyled my-4">
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Everything in
+                                        Professional</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> 1-on-1 mentoring
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Priority support
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Job placement
+                                        assistance</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Lifetime updates
+                                    </li>
+                                </ul>
+                                <a href="register.html" class="btn btn-outline-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold animate-fadeInUp">Frequently Asked Questions</h2>
+                    <p class="lead text-muted animate-fadeInUp">Get answers to common questions about this course</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item animate-fadeInUp">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        What are the prerequisites for this course?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        You should have basic networking knowledge (Network+ or equivalent), familiarity
+                                        with Linux command line, and understanding of basic security concepts. Security+
+                                        certification is recommended but not required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item animate-fadeInUp">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        How long do I have access to the course materials?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        You get lifetime access to all course materials, including video tutorials,
+                                        study guides, and lab environments. This allows you to learn at your own pace
+                                        and revisit the content anytime.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item animate-fadeInUp">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        Will this course prepare me for CEH certification?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, this course covers all the domains and topics required for the Certified
+                                        Ethical Hacker (CEH) exam. We also include practice tests and exam preparation
+                                        materials.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item animate-fadeInUp">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        What kind of lab environment is provided?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We provide a cloud-based virtual lab environment with pre-configured vulnerable
+                                        systems, networks, and applications. You'll have access to real penetration
+                                        testing tools in a safe, legal environment.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item animate-fadeInUp">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq5">
+                                        Is there instructor support available?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, all plans include access to our community forums and email support.
+                                        Professional and Enterprise plans include live Q&A sessions with instructors and
+                                        priority support.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="bg-primary text-white rounded-3 p-5 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Ready to Become an Ethical Hacker?</h2>
+                    <p class="lead mb-4">Join thousands of professionals who have advanced their careers with our
+                        ethical hacking training.</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="register.html" class="btn btn-success btn-lg">Enroll Now</a>
+                        <a href="contact.html" class="btn btn-light btn-lg">Talk to Advisor</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4 class="brand-identity"><i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                                class="brand-suffix">Academy</span></h4>
+                        <p>Leading provider of professional cybersecurity training and certification programs worldwide.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to get the latest cybersecurity news and course updates.</p>
+                        <form class="mt-3">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email">
+                                <button class="btn btn-success" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+
+            <div class="text-center">
+                <p>&copy; 2026 CyberSecure Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

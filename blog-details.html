@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ransomware Attacks Surge 300% in 2025 - Latest cybersecurity report">
+    <meta name="keywords" content="ransomware, cybersecurity, data breaches, threat analysis">
+    <meta name="author" content="Michael Chen">
+    <title>Ransomware Attacks Surge 300% in 2025 - CyberSecure Academy</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Blog Details Specific Styles - Perfect Alignment */
+        .hero-section {
+            background: linear-gradient(135deg, var(--dark-navy) 0%, var(--cyber-blue) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%2300ff88" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,133.3C960,128,1056,96,1152,90.7C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+        }
+
+        .blog-content-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            padding: 40px;
+        }
+
+        .blog-content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .blog-meta {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .blog-meta a {
+            color: var(--cyber-blue);
+            text-decoration: none;
+        }
+
+        .blog-meta a:hover {
+            color: var(--accent-green);
+        }
+
+        .featured-image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            margin: 0;
+        }
+
+        .featured-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .featured-image-container:hover img {
+            transform: scale(1.05);
+        }
+
+        .content-section {
+            margin: 0;
+        }
+
+        .content-section h2 {
+            color: var(--dark-navy);
+            font-weight: 700;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .content-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, var(--cyber-blue), var(--accent-green));
+            border-radius: 2px;
+        }
+
+        .content-section h3 {
+            color: var(--dark-navy);
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .content-section h3::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 24px;
+            background: linear-gradient(135deg, var(--cyber-blue), var(--accent-green));
+            border-radius: 2px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-item {
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--cyber-blue);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .attack-vectors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .attack-vector-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .attack-vector-card:hover {
+            border-color: var(--cyber-blue);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .attack-vector-card h4 {
+            color: var(--dark-navy);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .quote-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+            position: relative;
+            border-left: 5px solid var(--cyber-blue);
+        }
+
+        .quote-section::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 4rem;
+            color: var(--cyber-blue);
+            opacity: 0.3;
+        }
+
+        .quote-section p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #333;
+            margin-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        .quote-section footer {
+            text-align: right;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .protection-measures {
+            margin: 40px 0;
+        }
+
+        .protection-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .protection-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .protection-icon {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--cyber-blue), #0056b3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .protection-content h4 {
+            color: var(--dark-navy);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .protection-content p {
+            color: #666;
+            margin: 0;
+        }
+
+        .author-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+        }
+
+        .author-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .author-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--cyber-blue);
+        }
+
+        .author-info h4 {
+            color: var(--dark-navy);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .author-info p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .author-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .author-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .author-social a:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .share-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow-md);
+            margin: 30px 0;
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .share-btn:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .related-posts {
+            margin: 40px 0;
+        }
+
+        .related-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .related-post-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+
+        .related-post-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .related-post-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .sidebar-widget {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 30px;
+        }
+
+        .widget-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark-navy);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .widget-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(135deg, var(--cyber-blue), var(--accent-green));
+            border-radius: 2px;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag-item {
+            background: #f8f9fa;
+            color: var(--cyber-blue);
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--cyber-blue);
+        }
+
+        .tag-item:hover {
+            background: var(--cyber-blue);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .recent-post-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .recent-post-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .recent-post-thumb {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .recent-post-item h6 {
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        .recent-post-item h6 a {
+            color: var(--dark-navy);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .recent-post-item h6 a:hover {
+            color: var(--cyber-blue);
+        }
+
+        .comment-item {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .comment-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .author-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .protection-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .recent-post-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand brand-identity" href="index.html">
+                    <i class="bi bi-shield-check brand-icon"></i> CyberSecure <span class="brand-suffix">Academy</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home-2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-dashboard-btn" href="dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                        <button class="theme-toggle btn btn-outline-light btn-sm me-3" id="themeToggle">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                        <a href="login.html" class="btn btn-outline-light btn-sm me-2">Login</a>
+                        <a href="register.html" class="btn btn-success btn-sm">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Offcanvas Menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title"><i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                        class="brand-suffix">Academy</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="home-2.html">Home 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-dashboard-btn" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="btn btn-success w-100">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Blog Header Card -->
+        <section class="hero-section py-5 mt-5" style="min-height: 60vh;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="blog-content-card text-center animate-fadeInUp p-5 shadow-lg border-0">
+                            <div class="mb-4">
+                                <div class="btn-primary rounded-circle d-inline-flex align-items-center justify-content-center"
+                                    style="width: 80px; height: 80px; font-size: 2.5rem; margin: 0 auto; box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                            </div>
+                            <h1 class="display-4 fw-bold text-dark mb-3">Ransomware Attacks Surge 300% in 2025</h1>
+                            <p class="lead text-muted mb-4 mx-auto" style="max-width: 700px;">Latest cybersecurity
+                                report shows alarming increase in ransomware incidents targeting organizations
+                                worldwide.</p>
+
+                            <div class="d-flex justify-content-center flex-wrap gap-4 text-muted small">
+                                <span><i class="bi bi-calendar3 me-2 text-primary"></i> January 15, 2026</span>
+                                <span><i class="bi bi-person me-2 text-primary"></i> Michael Chen</span>
+                                <span><i class="bi bi-clock me-2 text-primary"></i> 8 min read</span>
+                                <span><i class="bi bi-tag me-2 text-primary"></i> Ransomware</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Content -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Left Sidebar - Added to fill gap -->
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="sidebar-widget animate-fadeInLeft">
+                            <h5 class="widget-title mb-4">Security Insights</h5>
+                            <div class="img-container mb-4 overflow-hidden rounded-3">
+                                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=400"
+                                    alt="Cyber Security" class="img-fluid hover-zoom"
+                                    style="transition: transform 0.5s ease;">
+                            </div>
+                            <div class="bg-primary text-white p-4 rounded-3 mb-4">
+                                <h6 class="mb-3"><i class="bi bi-shield-check me-2"></i>Stay Protected</h6>
+                                <p class="small mb-0">Join our newsletter to get weekly threat reports and security tips
+                                    directly in your inbox.</p>
+                            </div>
+                            <!-- Search in left menu -->
+                            <div class="sidebar-widget border-0 p-0 mb-4">
+                                <h6 class="mb-3">Search Article</h6>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Keywords...">
+                                    <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="blog-content-card animate-fadeInUp">
+
+
+                            <!-- Featured Image -->
+                            <div class="featured-image-container mb-5">
+                                <div class="img-container">
+                                    <img src="https://images.unsplash.com/photo-1563206767-5b18f218e0de?auto=format&fit=crop&q=80&w=1200"
+                                        alt="Ransomware Attack" class="img-aligned">
+                                </div>
+                            </div>
+
+                            <!-- Blog Content -->
+                            <div class="blog-content">
+                                <p class="lead mb-4">A comprehensive analysis of the unprecedented surge in ransomware
+                                    attacks targeting organizations worldwide in 2025, with detailed statistics and
+                                    mitigation strategies.</p>
+
+                                <h2 class="mb-5">Understanding the Threat Landscape</h2>
+                                <p class="mb-4">The cybersecurity landscape has witnessed a dramatic transformation in
+                                    2025, with ransomware attacks increasing by an unprecedented 300% compared to
+                                    previous years. This surge represents not just a statistical anomaly but a
+                                    fundamental shift in how cybercriminals operate and target organizations.</p>
+
+                                <h3 class="mb-5">Key Statistics and Trends</h3>
+                                <p class="mb-4">According to the latest cybersecurity threat report, several key factors
+                                    contribute to this alarming trend:</p>
+
+                                <!-- Statistics Grid -->
+                                <div class="row g-3 mb-5">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="stat-item p-3">
+                                            <div class="stat-number">300%</div>
+                                            <div class="stat-label">Increase in Attacks</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="stat-item p-3">
+                                            <div class="stat-number">$2.5M</div>
+                                            <div class="stat-label">Average Ransom</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="stat-item p-3">
+                                            <div class="stat-number">72%</div>
+                                            <div class="stat-label">Target Critical Infrastructure</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="stat-item p-3">
+                                            <div class="stat-number">45%</div>
+                                            <div class="stat-label">Double Extortion Tactics</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mb-5">Attack Vectors and Methods</h3>
+                                <p class="mb-4">Cybercriminals have evolved their tactics significantly, employing
+                                    sophisticated techniques that bypass traditional security measures. The most common
+                                    attack vectors include:</p>
+
+                                <!-- Attack Vectors Grid -->
+                                <div class="row g-3 mb-5">
+                                    <div class="col-md-6">
+                                        <div class="service-card h-100">
+                                            <div class="card-body p-4">
+                                                <h5 class="mb-3">Phishing Campaigns</h5>
+                                                <p>Highly targeted phishing emails using AI-generated content to bypass
+                                                    email filters and trick employees into revealing credentials.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="service-card h-100">
+                                            <div class="card-body p-4">
+                                                <h5 class="mb-3">Zero-Day Exploits</h5>
+                                                <p>Previously unknown vulnerabilities in popular software, exploited
+                                                    before patches become available.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="service-card h-100">
+                                            <div class="card-body p-4">
+                                                <h5 class="mb-3">Supply Chain Attacks</h5>
+                                                <p>Compromising trusted software vendors to distribute malware through
+                                                    legitimate updates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="service-card h-100">
+                                            <div class="card-body p-4">
+                                                <h5 class="mb-3">Ransomware-as-a-Service</h5>
+                                                <p>Cybercriminals offering ransomware tools and infrastructure to other
+                                                    attackers for a share of profits.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <blockquote
+                                    class="blockquote p-4 bg-light rounded-3 mb-5 border-start-4 border-primary">
+                                    <p class="mb-0 fs-5">"The sophistication and scale of these attacks represent a
+                                        paradigm shift in cybersecurity threats. Organizations must adopt a zero-trust
+                                        architecture immediately."</p>
+                                    <footer class="blockquote-footer mt-3">Dr. Sarah Mitchell, Chief Security Officer
+                                    </footer>
+                                </blockquote>
+
+                                <h3 class="mb-5">Protective Measures</h3>
+                                <p class="mb-4">To combat this surge in ransomware attacks, organizations must implement
+                                    comprehensive security strategies:</p>
+
+                                <!-- Protection Measures -->
+                                <div class="row g-4 mb-5">
+                                    <div class="col-md-6">
+                                        <div class="service-card h-100">
+                                            <div class="card-body text-center p-4">
+                                                <div class="protection-icon mb-3 mx-auto">
+                                                    <i class="bi bi-shield-check"></i>
+                                                </div>
+                                                <h5 class="mb-3">Regular Backups</h5>
+                                                <p>Implement 3-2-1 backup strategy with offline and immutable backups to
+                                                    ensure data recovery.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="service-card h-100">
+                                            <div class="card-body text-center p-4">
+                                                <div class="protection-icon mb-3 mx-auto">
+                                                    <i class="bi bi-person-lock"></i>
+                                                </div>
+                                                <h5 class="mb-3">Employee Training</h5>
+                                                <p>Conduct regular security awareness training to recognize and prevent
+                                                    phishing attacks.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="service-card h-100">
+                                            <div class="card-body text-center p-4">
+                                                <div class="protection-icon mb-3 mx-auto">
+                                                    <i class="bi bi-graph-up"></i>
+                                                </div>
+                                                <h5 class="mb-3">Advanced Threat Detection</h5>
+                                                <p>Deploy AI-powered security solutions for real-time threat detection
+                                                    and response.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="service-card h-100">
+                                            <div class="card-body text-center p-4">
+                                                <div class="protection-icon mb-3 mx-auto">
+                                                    <i class="bi bi-gear"></i>
+                                                </div>
+                                                <h5 class="mb-3">Zero-Trust Architecture</h5>
+                                                <p>Implement zero-trust security model with strict access controls and
+                                                    continuous monitoring.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mb-4">Future Outlook</h3>
+                                <p class="mb-4">As we look toward the remainder of 2025 and beyond, cybersecurity
+                                    experts predict continued evolution of ransomware threats. The integration of
+                                    artificial intelligence by cybercriminals will likely make attacks more
+                                    sophisticated and harder to detect.</p>
+
+                                <p class="mb-5">Organizations that invest in proactive security measures, maintain
+                                    comprehensive backup strategies, and prioritize employee education will be better
+                                    positioned to defend against these evolving threats.</p>
+
+                                <!-- Share Section -->
+                                <div class="share-section p-4 bg-light rounded-3">
+                                    <h5 class="mb-4">Share this Article</h5>
+                                    <div class="share-buttons d-flex gap-2 flex-wrap">
+                                        <a href="#" class="btn btn-primary btn-sm px-3">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-info btn-sm px-3">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-sm px-3">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-success btn-sm px-3">
+                                            <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-dark btn-sm px-3">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Author Section -->
+                        <div class="author-section mb-5 mt-5">
+                            <div class="blog-content-card">
+                                <h4 class="mb-4">About the Author</h4>
+                                <div class="author-card d-flex align-items-start">
+                                    <div class="img-container me-4">
+                                        <img src="https://picsum.photos/seed/michael-chen/120/120" alt="Michael Chen"
+                                            class="rounded-circle" width="120" height="120">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h5 class="mb-2">Michael Chen</h5>
+                                        <p class="text-muted mb-3">Senior Cybersecurity Analyst with over 15 years of
+                                            experience in threat intelligence and incident response. Michael specializes
+                                            in
+                                            ransomware analysis and has helped numerous organizations recover from
+                                            sophisticated attacks.</p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <a href="#" class="btn btn-outline-primary btn-sm px-3">
+                                                <i class="bi bi-twitter"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary btn-sm px-3">
+                                                <i class="bi bi-linkedin"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary btn-sm px-3">
+                                                <i class="bi bi-github"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-outline-primary btn-sm px-3">
+                                                <i class="bi bi-envelope"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Related Posts -->
+                        <div class="related-posts">
+                            <div class="blog-content-card">
+                                <h4 class="mb-4">Related Articles</h4>
+                                <div class="grid-3">
+                                    <div class="service-card">
+                                        <div class="card-body">
+                                            <div class="img-container mb-3">
+                                                <img src="https://picsum.photos/seed/zero-day-vulnerability/400/200"
+                                                    alt="Zero-Day Vulnerabilities" class="img-aligned">
+                                            </div>
+                                            <h6 class="mb-2">Zero-Day Vulnerabilities: A Growing Concern</h6>
+                                            <p class="text-muted small mb-3">Understanding and mitigating unknown
+                                                threats in
+                                                modern systems.</p>
+                                            <small class="text-muted">January 10, 2025</small>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="card-body">
+                                            <div class="img-container mb-3">
+                                                <img src="https://picsum.photos/seed/ai-cybersecurity/400/200"
+                                                    alt="AI in Cybersecurity" class="img-aligned">
+                                            </div>
+                                            <h6 class="mb-2">AI in Cybersecurity: Friend or Foe?</h6>
+                                            <p class="text-muted small mb-3">Exploring the dual role of artificial
+                                                intelligence in security.</p>
+                                            <small class="text-muted">January 8, 2025</small>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="card-body">
+                                            <div class="img-container mb-3">
+                                                <img src="https://picsum.photos/seed/cloud-security/400/200"
+                                                    alt="Cloud Security" class="img-aligned">
+                                            </div>
+                                            <h6 class="mb-2">Cloud Security Best Practices for 2025</h6>
+                                            <p class="text-muted small mb-3">Essential strategies for protecting cloud
+                                                infrastructure.</p>
+                                            <small class="text-muted">January 5, 2025</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Comments Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Main Content -->
+                    <div class="col-lg-12">
+                        <div class="blog-content-card">
+                            <h4 class="mb-4">Comments (24)</h4>
+
+                            <!-- Comment Form -->
+                            <div class="comment-form mb-5 p-4 bg-white rounded-3 shadow-sm">
+                                <h5 class="mb-4">Leave a Comment</h5>
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Name</label>
+                                            <input type="text" class="form-control" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" placeholder="Your Email" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label">Comment</label>
+                                            <textarea class="form-control" rows="4" required></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Post Comment</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Comments List -->
+                            <div class="comments-list">
+                                <div class="comment-item p-4 bg-white rounded-3 shadow-sm mb-3">
+                                    <div class="d-flex">
+                                        <img src="https://picsum.photos/seed/sarah-johnson/60/60" alt="Sarah Johnson"
+                                            class="rounded-circle me-3" width="60" height="60">
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div>
+                                                    <h6 class="mb-1">Sarah Johnson</h6>
+                                                    <small class="text-muted">January 16, 2025 at 2:30 PM</small>
+                                                </div>
+                                                <button class="btn btn-sm btn-outline-primary">Reply</button>
+                                            </div>
+                                            <p class="mb-3">Great analysis! The statistics you've provided are quite
+                                                alarming. Our organization has also noticed an increase in attempted
+                                                attacks. Regular employee training has been our best defense so far.</p>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <button class="btn btn-sm btn-outline-secondary">
+                                                    <i class="bi bi-hand-thumbs-up"></i> 12
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-secondary">
+                                                    <i class="bi bi-hand-thumbs-down"></i> 0
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-secondary">
+                                                    <i class="bi bi-share"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment-item p-4 bg-white rounded-3 shadow-sm mb-3">
+                                    <div class="d-flex">
+                                        <img src="https://picsum.photos/seed/david-martinez/60/60" alt="David Martinez"
+                                            class="rounded-circle me-3" width="60" height="60">
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div>
+                                                    <h6 class="mb-1">David Martinez</h6>
+                                                    <small class="text-muted">January 16, 2025 at 4:15 PM</small>
+                                                </div>
+                                                <button class="btn btn-sm btn-outline-primary">Reply</button>
+                                            </div>
+                                            <p class="mb-3">The double extortion tactics are particularly concerning.
+                                                We've implemented a zero-trust architecture which has helped, but the
+                                                threat landscape keeps evolving.</p>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <button class="btn btn-sm btn-outline-secondary">
+                                                    <i class="bi bi-hand-thumbs-up"></i> 8
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-secondary">
+                                                    <i class="bi bi-hand-thumbs-down"></i> 1
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-secondary">
+                                                    <i class="bi bi-share"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment-item p-4 bg-white rounded-3 shadow-sm mb-3">
+                                    <div class="d-flex">
+                                        <img src="https://picsum.photos/seed/emily-chen/60/60" alt="Emily Chen"
+                                            class="rounded-circle me-3" width="60" height="60">
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                <div>
+                                                    <h6 class="mb-1">Emily Chen</h6>
+                                                    <small class="text-muted">January 17, 2025 at 10:30 AM</small>
+                                                </div>
+                                                <button class="btn btn-sm btn-outline-primary">Reply</button>
+                                            </div>
+                                            <p class="mb-3">Excellent article! The insights on AI-powered attacks were
+                                                particularly valuable. We're updating our security protocols based on
+                                                this information.</p>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <button class="btn btn-sm btn-outline-secondary">
+                                                    <i class="bi bi-hand-thumbs-up"></i> 15
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-secondary">
+                                                    <i class="bi bi-hand-thumbs-down"></i> 0
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-secondary">
+                                                    <i class="bi bi-share"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Load More Comments -->
+                            <div class="text-center mt-4">
+                                <button class="btn btn-outline-primary">
+                                    <i class="bi bi-arrow-down-circle me-2"></i>Load More Comments
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4 class="brand-identity"><i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                                class="brand-suffix">Academy</span></h4>
+                        <p>Leading provider of professional cybersecurity training and certification programs worldwide.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to get the latest cybersecurity news and course updates.</p>
+                        <form class="mt-3">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email">
+                                <button class="btn btn-success" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+
+            <div class="text-center">
+                <p>&copy; 2026 CyberSecure Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

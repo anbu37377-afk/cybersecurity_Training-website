@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cybersecurity Training Services - Professional courses and certification programs">
+    <meta name="keywords" content="cybersecurity services, training, courses, certification">
+    <meta name="author" content="CyberSecure Academy">
+    <title>Services - CyberSecure Academy</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand brand-identity" href="index.html">
+                    <i class="bi bi-shield-check brand-icon"></i> CyberSecure <span class="brand-suffix">Academy</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home-2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-dashboard-btn" href="dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                        <button class="theme-toggle btn btn-outline-light btn-sm me-3" id="themeToggle">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                        <a href="login.html" class="btn btn-outline-light btn-sm me-2">Login</a>
+                        <a href="register.html" class="btn btn-success btn-sm">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Offcanvas Menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title"><i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                        class="brand-suffix">Academy</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home-2.html">Home 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dashboard-btn" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <div class="d-flex justify-content-center mb-3">
+                            <button class="theme-toggle" id="themeToggleMobile">
+                                <i class="bi bi-moon-fill"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="btn btn-success w-100">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-8 mx-auto text-center hero-content">
+                        <h1 class="hero-title animate-fadeInUp">Our Training Programs</h1>
+                        <p class="hero-subtitle animate-fadeInUp">Comprehensive cybersecurity courses designed to
+                            elevate your skills and advance your career</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="py-4 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="d-flex flex-wrap gap-2 justify-content-center">
+                            <button class="btn btn-primary filter-btn active" data-filter="all">All Courses</button>
+                            <button class="btn btn-outline-primary filter-btn" data-filter="beginner">Beginner</button>
+                            <button class="btn btn-outline-primary filter-btn"
+                                data-filter="intermediate">Intermediate</button>
+                            <button class="btn btn-outline-primary filter-btn" data-filter="advanced">Advanced</button>
+                            <button class="btn btn-outline-primary filter-btn"
+                                data-filter="certification">Certification</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Ethical Hacking -->
+                    <div class="col-lg-4 col-md-6 service-item animate-fadeInUp" data-category="advanced certification">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-bug"></i>
+                            </div>
+                            <h4>Ethical Hacking</h4>
+                            <p>Master penetration testing, vulnerability assessment, and ethical hacking techniques with
+                                hands-on labs.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-check-circle text-success"></i> Web Application Testing</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Network Penetration Testing</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Social Engineering</li>
+                                <li><i class="bi bi-check-circle text-success"></i> CEH Preparation</li>
+                            </ul>
+                            <div class="text-center">
+                                <span class="badge bg-danger d-block mb-2">Advanced</span>
+                                <a href="service-details.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Network Security -->
+                    <div class="col-lg-4 col-md-6 service-item animate-fadeInUp"
+                        data-category="intermediate certification">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-router"></i>
+                            </div>
+                            <h4>Network Security</h4>
+                            <p>Learn to secure network infrastructure, implement firewalls, and protect against
+                                network-based attacks.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-check-circle text-success"></i> Firewall Configuration</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Intrusion Detection</li>
+                                <li><i class="bi bi-check-circle text-success"></i> VPN Implementation</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Network Monitoring</li>
+                            </ul>
+                            <div class="text-center">
+                                <span class="badge bg-warning d-block mb-2">Intermediate</span>
+                                <a href="service-details.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Security -->
+                    <div class="col-lg-4 col-md-6 service-item animate-fadeInUp" data-category="intermediate">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-cloud-lock"></i>
+                            </div>
+                            <h4>Cloud Security</h4>
+                            <p>Secure cloud environments across AWS, Azure, and Google Cloud platforms with best
+                                practices.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-check-circle text-success"></i> Cloud Architecture Security</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Identity & Access Management</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Cloud Compliance</li>
+                                <li><i class="bi bi-check-circle text-success"></i> DevSecOps Practices</li>
+                            </ul>
+                            <div class="text-center">
+                                <span class="badge bg-warning d-block mb-2">Intermediate</span>
+                                <a href="service-details.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Incident Response -->
+                    <div class="col-lg-4 col-md-6 service-item animate-fadeInUp" data-category="advanced">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-shield-exclamation"></i>
+                            </div>
+                            <h4>Incident Response</h4>
+                            <p>Develop skills to detect, respond to, and recover from security incidents effectively.
+                            </p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-check-circle text-success"></i> Incident Detection</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Response Planning</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Digital Forensics</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Recovery Procedures</li>
+                            </ul>
+                            <div class="text-center">
+                                <span class="badge bg-danger d-block mb-2">Advanced</span>
+                                <a href="service-details.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cybersecurity Fundamentals -->
+                    <div class="col-lg-4 col-md-6 service-item animate-fadeInUp" data-category="beginner">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-shield-plus"></i>
+                            </div>
+                            <h4>Cybersecurity Fundamentals</h4>
+                            <p>Perfect starting point for beginners. Learn core concepts, terminology, and basic
+                                security practices.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-check-circle text-success"></i> Security Concepts</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Threat Landscape</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Basic Cryptography</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Security Best Practices</li>
+                            </ul>
+                            <div class="text-center">
+                                <span class="badge bg-success d-block mb-2">Beginner</span>
+                                <a href="service-details.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security+ Certification -->
+                    <div class="col-lg-4 col-md-6 service-item animate-fadeInUp"
+                        data-category="intermediate certification">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-patch-check"></i>
+                            </div>
+                            <h4>Security+ Certification</h4>
+                            <p>Comprehensive preparation for CompTIA Security+ certification exam with practice tests
+                                and labs.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-check-circle text-success"></i> Threats & Attacks</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Architecture & Design</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Implementation</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Operations & Compliance</li>
+                            </ul>
+                            <div class="text-center">
+                                <span class="badge bg-warning d-block mb-2">Intermediate</span>
+                                <a href="service-details.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Digital Forensics -->
+                    <div class="col-lg-4 col-md-6 service-item animate-fadeInUp" data-category="advanced">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <h4>Digital Forensics</h4>
+                            <p>Learn digital investigation techniques, evidence collection, and forensic analysis
+                                methods.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-check-circle text-success"></i> Evidence Collection</li>
+                                <li><i class="bi bi-check-circle text-success"></i> File System Analysis</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Memory Forensics</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Network Forensics</li>
+                            </ul>
+                            <div class="text-center">
+                                <span class="badge bg-danger d-block mb-2">Advanced</span>
+                                <a href="service-details.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application Security -->
+                    <div class="col-lg-4 col-md-6 service-item animate-fadeInUp" data-category="intermediate">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h4>Application Security</h4>
+                            <p>Secure software development practices, code review, and application vulnerability
+                                testing.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-check-circle text-success"></i> Secure Coding</li>
+                                <li><i class="bi bi-check-circle text-success"></i> OWASP Top 10</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Code Review</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Static & Dynamic Analysis</li>
+                            </ul>
+                            <div class="text-center">
+                                <span class="badge bg-warning d-block mb-2">Intermediate</span>
+                                <a href="service-details.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CISSP Preparation -->
+                    <div class="col-lg-4 col-md-6 service-item animate-fadeInUp" data-category="advanced certification">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <h4>CISSP Preparation</h4>
+                            <p>Advanced preparation for CISSP certification covering all 8 domains of cybersecurity.</p>
+                            <ul class="list-unstyled mb-3">
+                                <li><i class="bi bi-check-circle text-success"></i> Security & Risk Management</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Asset Security</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Security Architecture</li>
+                                <li><i class="bi bi-check-circle text-success"></i> Communication & Network Security
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <span class="badge bg-danger d-block mb-2">Advanced</span>
+                                <a href="service-details.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Features -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold animate-fadeInUp">Why Choose Our Training?</h2>
+                    <p class="lead text-muted animate-fadeInUp">Comprehensive learning experience with industry-leading
+                        features</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-laptop" style="font-size: 3rem; color: var(--cyber-blue);"></i>
+                            </div>
+                            <h4>Interactive Labs</h4>
+                            <p>Hands-on experience in virtual environments with real cybersecurity tools.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-person-video3" style="font-size: 3rem; color: var(--cyber-blue);"></i>
+                            </div>
+                            <h4>Expert Instructors</h4>
+                            <p>Learn from certified professionals with years of industry experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-patch-check-fill"
+                                    style="font-size: 3rem; color: var(--cyber-blue);"></i>
+                            </div>
+                            <h4>Certification Prep</h4>
+                            <p>Comprehensive preparation for industry-recognized certifications.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-headset" style="font-size: 3rem; color: var(--cyber-blue);"></i>
+                            </div>
+                            <h4>24/7 Support</h4>
+                            <p>Get help whenever you need it from our dedicated support team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Methodologies Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-fadeInUp">Our Learning Methodologies</h2>
+                    <p class="lead text-muted animate-fadeInUp">Innovative approaches to cybersecurity education</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="service-card h-100">
+                            <div class="card-body">
+                                <div class="img-container mb-4">
+                                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+                                        alt="Hands-on Lab" class="img-aligned">
+                                </div>
+                                <h4>Hands-On Lab Environment</h4>
+                                <p class="text-muted mb-3">Practice in real-world scenarios with our advanced virtual
+                                    labs featuring isolated networks and live attack simulations.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Isolated network
+                                        environments</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Real-time attack
+                                        simulations</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> 24/7 lab access
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="service-card h-100">
+                            <div class="card-body">
+                                <div class="img-container mb-4">
+                                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+                                        alt="AI Learning" class="img-aligned">
+                                </div>
+                                <h4>AI-Powered Learning Paths</h4>
+                                <p class="text-muted mb-3">Personalized learning experiences powered by artificial
+                                    intelligence that adapt to your skill level and learning pace.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Adaptive curriculum
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Intelligent
+                                        recommendations</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success"></i> Progress tracking
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Corporate Training Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-fadeInUp">Corporate Training Solutions</h2>
+                    <p class="lead text-muted animate-fadeInUp">Customized programs for organizations</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <div class="img-container mb-4">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200"
+                                alt="Corporate Training" class="img-aligned">
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-building"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>On-Site Training</h4>
+                                        <p>Customized training programs delivered at your facility</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-globe"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Virtual Training</h4>
+                                        <p>Live instructor-led training for distributed teams</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-clipboard-data"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Skills Assessment</h4>
+                                        <p>Comprehensive evaluation of team cybersecurity capabilities</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-trophy"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Certification Programs</h4>
+                                        <p>Group certification preparation and testing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="service-card">
+                            <div class="card-body">
+                                <h4 class="mb-4 text-center">Corporate Partners</h4>
+                                <div class="row g-3">
+                                    <div class="col-6 col-md-6">
+                                        <div class="img-container bg-light rounded shadow-sm d-flex align-items-center justify-content-center"
+                                            style="height: 80px; padding: 10px;">
+                                            <img src="https://cdn.worldvectorlogo.com/logos/microsoft-5.svg"
+                                                alt="Microsoft"
+                                                style="max-width: 100%; max-height: 60px; object-fit: contain;">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6">
+                                        <div class="img-container bg-light rounded shadow-sm d-flex align-items-center justify-content-center"
+                                            style="height: 80px; padding: 10px;">
+                                            <img src="https://cdn.worldvectorlogo.com/logos/google-2015.svg"
+                                                alt="Google"
+                                                style="max-width: 100%; max-height: 60px; object-fit: contain;">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6">
+                                        <div class="img-container bg-light rounded shadow-sm d-flex align-items-center justify-content-center"
+                                            style="height: 80px; padding: 10px;">
+                                            <img src="https://cdn.worldvectorlogo.com/logos/amazon-web-services-2.svg"
+                                                alt="AWS"
+                                                style="max-width: 100%; max-height: 60px; object-fit: contain;">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6">
+                                        <div class="img-container bg-light rounded shadow-sm d-flex align-items-center justify-content-center"
+                                            style="height: 80px; padding: 10px;">
+                                            <img src="https://cdn.worldvectorlogo.com/logos/cisco-2.svg" alt="Cisco"
+                                                style="max-width: 100%; max-height: 60px; object-fit: contain;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Success Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="animate-fadeInUp">Student Success Stories</h2>
+                    <p class="lead text-muted animate-fadeInUp">Real achievements from our graduates</p>
+                </div>
+
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="author-avatar me-3">AK</div>
+                            <div>
+                                <h6 class="mb-1">Alex Kumar</h6>
+                                <small class="text-muted">Security Engineer at TechStart</small>
+                            </div>
+                        </div>
+                        <p>"The Network Security course gave me the practical skills needed to land my dream job. The
+                            lab simulations were incredibly realistic."</p>
+                        <div class="mt-3">
+                            <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&q=80&w=400"
+                                    alt="Alex's Success" class="img-aligned">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="author-avatar me-3">LP</div>
+                            <div>
+                                <h6 class="mb-1">Lisa Park</h6>
+                                <small class="text-muted">Penetration Tester at SecureNet</small>
+                            </div>
+                        </div>
+                        <p>"The ethical hacking program exceeded my expectations. I'm now working on exciting
+                            penetration testing projects daily."</p>
+                        <div class="mt-3">
+                            <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1496096265110-f83ad7f96608?auto=format&fit=crop&q=80&w=400"
+                                    alt="Lisa's Success" class="img-aligned">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="author-avatar me-3">MR</div>
+                            <div>
+                                <h6 class="mb-1">Mark Rodriguez</h6>
+                                <small class="text-muted">Cloud Security Specialist at CloudPro</small>
+                            </div>
+                        </div>
+                        <p>"The Cloud Security certification program was comprehensive and well-structured. Highly
+                            recommend for anyone entering this field."</p>
+                        <div class="mt-3">
+                            <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1510511459019-5dee997ddfdf?auto=format&fit=crop&q=80&w=400"
+                                    alt="Mark's Success" class="img-aligned">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Partners Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Trusted by Industry Leaders</h2>
+                    <p class="lead text-muted">We partner with top organizations to deliver cutting-edge cybersecurity
+                        training</p>
+                </div>
+
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="img-container mb-4">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+                                alt="Industry Partners" class="img-fluid rounded-3 shadow-lg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="mb-4">Strategic Partnerships</h3>
+                        <p class="mb-4">Our collaboration with industry leaders ensures our curriculum remains current
+                            and relevant to real-world cybersecurity challenges.</p>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon me-3">
+                                        <i class="bi bi-building"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-2">Fortune 500 Companies</h5>
+                                        <p class="text-muted mb-0">Training programs trusted by major corporations
+                                            worldwide</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon me-3">
+                                        <i class="bi bi-shield-lock"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-2">Security Vendors</h5>
+                                        <p class="text-muted mb-0">Partnerships with leading cybersecurity solution
+                                            providers</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon me-3">
+                                        <i class="bi bi-award"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-2">Certification Bodies</h5>
+                                        <p class="text-muted mb-0">Official training partner for major certification
+                                            programs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon me-3">
+                                        <i class="bi bi-globe"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-2">Global Reach</h5>
+                                        <p class="text-muted mb-0">International partnerships spanning multiple
+                                            continents</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary btn-lg">View All Partners</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner Logos -->
+                <div class="mt-5 pt-5 border-top">
+                    <h4 class="text-center mb-4">Our Trusted Partners</h4>
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-3 col-6 text-center">
+                            <div class="partner-logo p-3">
+                                <i class="bi bi-microsoft display-4 text-primary"></i>
+                                <p class="mb-0 small mt-2">Microsoft</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 text-center">
+                            <div class="partner-logo p-3">
+                                <i class="bi bi-google display-4 text-danger"></i>
+                                <p class="mb-0 small mt-2">Google</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 text-center">
+                            <div class="partner-logo p-3">
+                                <i class="bi bi-amazon display-4 text-warning"></i>
+                                <p class="mb-0 small mt-2">AWS</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 text-center">
+                            <div class="partner-logo p-3">
+                                <i class="bi bi-apple display-4 text-dark"></i>
+                                <p class="mb-0 small mt-2">Apple</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training Facilities Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">State-of-the-Art Training Facilities</h2>
+                    <p class="lead text-muted">Experience hands-on learning in our advanced cybersecurity labs and
+                        training centers</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-lg">
+                            <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800"
+                                    alt="Cybersecurity Lab" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-cpu"></i>
+                                </div>
+                                <h4 class="card-title">Advanced Labs</h4>
+                                <p class="card-text">Cutting-edge computer labs equipped with the latest hardware and
+                                    software for practical cybersecurity training exercises.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>High-performance
+                                        workstations</li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>Virtual lab environments
+                                    </li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>24/7 lab access</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-lg">
+                            <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
+                                    alt="Training Classroom" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <h4 class="card-title">Modern Classrooms</h4>
+                                <p class="card-text">Spacious, air-conditioned classrooms with interactive displays and
+                                    collaborative learning spaces for optimal education.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>Interactive smart boards
+                                    </li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>Video conferencing</li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>Comfortable seating</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-lg">
+                            <div class="img-container">
+                                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+                                    alt="Virtual Training" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-camera-video"></i>
+                                </div>
+                                <h4 class="card-title">Virtual Training</h4>
+                                <p class="card-text">State-of-the-art virtual training platform with HD video streaming
+                                    and interactive features for remote learning.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>HD video streaming</li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>Interactive sessions</li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i>Recorded lessons</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-2">
+                    <div class="col-lg-6">
+                        <div class="card h-100 border-0 shadow-lg">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="img-container h-100">
+                                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=600"
+                                            alt="Security Operations Center" class="img-fluid h-100 object-fit-cover">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Security Operations Center</h4>
+                                        <p class="card-text">Train in our simulated SOC environment with real-time
+                                            monitoring tools and threat detection systems.</p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <span class="badge bg-primary">SIEM Tools</span>
+                                            <span class="badge bg-success">Threat Intelligence</span>
+                                            <span class="badge bg-info">Incident Response</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card h-100 border-0 shadow-lg">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="img-container h-100">
+                                        <img src="https://images.unsplash.com/photo-1454165833762-01d678e32981?auto=format&fit=crop&q=80&w=600"
+                                            alt="Certification Center" class="img-fluid h-100 object-fit-cover">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Certification Center</h4>
+                                        <p class="card-text">Official testing center for major cybersecurity
+                                            certifications with comfortable exam environment.</p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <span class="badge bg-warning text-dark">CompTIA</span>
+                                            <span class="badge bg-danger">CEH</span>
+                                            <span class="badge bg-dark">CISSP</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="bg-primary text-white rounded-3 p-5 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Ready to Start Learning?</h2>
+                    <p class="lead mb-4">Choose from our comprehensive range of cybersecurity courses and take the first
+                        step towards a rewarding career.</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="register.html" class="btn btn-success btn-lg">Enroll Now</a>
+                        <a href="pricing.html" class="btn btn-light btn-lg">View Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4 class="brand-identity"><i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                                class="brand-suffix">Academy</span></h4>
+                        <p>Leading provider of professional cybersecurity training and certification programs worldwide.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to get the latest cybersecurity news and course updates.</p>
+                        <form class="mt-3">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email">
+                                <button class="btn btn-success" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+
+            <div class="text-center">
+                <p>&copy; 2026 CyberSecure Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

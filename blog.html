@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cybersecurity Blog - Latest news, tips, and insights">
+    <meta name="keywords" content="cybersecurity blog, security news, ethical hacking, network security">
+    <meta name="author" content="CyberSecure Academy">
+    <title>Blog - CyberSecure Academy</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand brand-identity" href="index.html">
+                    <i class="bi bi-shield-check brand-icon"></i> CyberSecure <span class="brand-suffix">Academy</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="home-2.html">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-dashboard-btn" href="dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                        <button class="theme-toggle btn btn-outline-light btn-sm me-3" id="themeToggle">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                        <a href="login.html" class="btn btn-outline-light btn-sm me-2">Login</a>
+                        <a href="register.html" class="btn btn-success btn-sm">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Offcanvas Menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title"><i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                        class="brand-suffix">Academy</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home-2.html">Home 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dashboard-btn" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <div class="d-flex justify-content-center mb-3">
+                            <button class="theme-toggle" id="themeToggleMobile">
+                                <i class="bi bi-moon-fill"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="btn btn-outline-primary w-100 mb-2">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="btn btn-success w-100">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-8 mx-auto text-center hero-content">
+                        <h1 class="hero-title animate-fadeInUp">Cybersecurity Blog</h1>
+                        <p class="hero-subtitle animate-fadeInUp">Latest insights, news, and expert tips from the world
+                            of cybersecurity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="py-4 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search articles..."
+                                aria-label="Search">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+                            <button class="btn btn-outline-primary category-btn active" data-category="all">All</button>
+                            <button class="btn btn-outline-primary category-btn" data-category="news">News</button>
+                            <button class="btn btn-outline-primary category-btn"
+                                data-category="tutorials">Tutorials</button>
+                            <button class="btn btn-outline-primary category-btn" data-category="tips">Tips</button>
+                            <button class="btn btn-outline-primary category-btn"
+                                data-category="threats">Threats</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Blog Post 1 -->
+                    <div class="col-lg-4 col-md-6 blog-item animate-fadeInUp" data-category="news threats">
+                        <div class="blog-card">
+                            <div class="card-body">
+                                <div class="blog-meta">
+                                    <i class="bi bi-calendar3"></i> January 15, 2026
+                                    <span class="ms-3"><i class="bi bi-person"></i> <a href="#">Michael Chen</a></span>
+                                </div>
+                                <h4 class="mt-3">Ransomware Attacks Surge 300% in 2025</h4>
+                                <p>Latest cybersecurity report shows alarming increase in ransomware incidents targeting
+                                    healthcare and financial sectors.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-danger">Threats</span>
+                                    <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 2 -->
+                    <div class="col-lg-4 col-md-6 blog-item animate-fadeInUp" data-category="tutorials">
+                        <div class="blog-card">
+                            <div class="card-body">
+                                <div class="blog-meta">
+                                    <i class="bi bi-calendar3"></i> January 12, 2026
+                                    <span class="ms-3"><i class="bi bi-person"></i> <a href="#">Sarah Johnson</a></span>
+                                </div>
+                                <h4 class="mt-3">Setting Up Your First Penetration Testing Lab</h4>
+                                <p>Step-by-step guide to creating a safe environment for practicing ethical hacking
+                                    techniques using virtual machines.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Tutorials</span>
+                                    <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 3 -->
+                    <div class="col-lg-4 col-md-6 blog-item animate-fadeInUp" data-category="tips">
+                        <div class="blog-card">
+                            <div class="card-body">
+                                <div class="blog-meta">
+                                    <i class="bi bi-calendar3"></i> January 10, 2026
+                                    <span class="ms-3"><i class="bi bi-person"></i> <a href="#">Robert
+                                            Williams</a></span>
+                                </div>
+                                <h4 class="mt-3">10 Essential Security Tips for Remote Workers</h4>
+                                <p>Protect your home office and sensitive data with these crucial cybersecurity best
+                                    practices for remote work.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success">Tips</span>
+                                    <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 4 -->
+                    <div class="col-lg-4 col-md-6 blog-item animate-fadeInUp" data-category="news">
+                        <div class="blog-card">
+                            <div class="card-body">
+                                <div class="blog-meta">
+                                    <i class="bi bi-calendar3"></i> January 8, 2026
+                                    <span class="ms-3"><i class="bi bi-person"></i> <a href="#">Emily Davis</a></span>
+                                </div>
+                                <h4 class="mt-3">New AI-Powered Security Tools Transform Threat Detection</h4>
+                                <p>How machine learning algorithms are revolutionizing the way organizations detect and
+                                    respond to cyber threats.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-info">News</span>
+                                    <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 5 -->
+                    <div class="col-lg-4 col-md-6 blog-item animate-fadeInUp" data-category="tutorials">
+                        <div class="blog-card">
+                            <div class="card-body">
+                                <div class="blog-meta">
+                                    <i class="bi bi-calendar3"></i> January 5, 2026
+                                    <span class="ms-3"><i class="bi bi-person"></i> <a href="#">Michael Chen</a></span>
+                                </div>
+                                <h4 class="mt-3">Mastering Nmap for Network Discovery</h4>
+                                <p>Complete guide to using Nmap for network scanning, port discovery, and vulnerability
+                                    assessment.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Tutorials</span>
+                                    <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 6 -->
+                    <div class="col-lg-4 col-md-6 blog-item animate-fadeInUp" data-category="threats">
+                        <div class="blog-card">
+                            <div class="card-body">
+                                <div class="blog-meta">
+                                    <i class="bi bi-calendar3"></i> January 3, 2026
+                                    <span class="ms-3"><i class="bi bi-person"></i> <a href="#">Sarah Johnson</a></span>
+                                </div>
+                                <h4 class="mt-3">Understanding Zero-Day Exploits: What You Need to Know</h4>
+                                <p>Deep dive into zero-day vulnerabilities and how organizations can protect themselves
+                                    against these unknown threats.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-danger">Threats</span>
+                                    <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 7 -->
+                    <div class="col-lg-4 col-md-6 blog-item animate-fadeInUp" data-category="tips">
+                        <div class="blog-card">
+                            <div class="card-body">
+                                <div class="blog-meta">
+                                    <i class="bi bi-calendar3"></i> January 1, 2026
+                                    <span class="ms-3"><i class="bi bi-person"></i> <a href="#">Robert
+                                            Williams</a></span>
+                                </div>
+                                <h4 class="mt-3">Password Security Best Practices for 2026</h4>
+                                <p>Why traditional passwords are becoming obsolete and what you should use instead to
+                                    protect your accounts.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success">Tips</span>
+                                    <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 8 -->
+                    <div class="col-lg-4 col-md-6 blog-item animate-fadeInUp" data-category="tutorials">
+                        <div class="blog-card">
+                            <div class="card-body">
+                                <div class="blog-meta">
+                                    <i class="bi bi-calendar3"></i> December 28, 2025
+                                    <span class="ms-3"><i class="bi bi-person"></i> <a href="#">Emily Davis</a></span>
+                                </div>
+                                <h4 class="mt-3">Implementing Zero Trust Architecture in Your Organization</h4>
+                                <p>Practical steps to transition from traditional security models to a zero-trust
+                                    approach.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Tutorials</span>
+                                    <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 9 -->
+                    <div class="col-lg-4 col-md-6 blog-item animate-fadeInUp" data-category="news">
+                        <div class="blog-card">
+                            <div class="card-body">
+                                <div class="blog-meta">
+                                    <i class="bi bi-calendar3"></i> December 25, 2025
+                                    <span class="ms-3"><i class="bi bi-person"></i> <a href="#">Michael Chen</a></span>
+                                </div>
+                                <h4 class="mt-3">Major Data Breach Exposes 10 Million User Records</h4>
+                                <p>Analysis of the latest data breach and lessons learned for improving organizational
+                                    security posture.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-info">News</span>
+                                    <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pagination -->
+        <section class="py-4">
+            <div class="container">
+                <nav aria-label="Blog pagination">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="bg-primary text-white rounded-3 p-5 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Stay Updated with Cybersecurity News</h2>
+                    <p class="lead mb-4">Get the latest articles, tips, and industry insights delivered to your inbox
+                        weekly.</p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-lg"
+                                placeholder="Enter your email address">
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="submit" class="btn btn-success btn-lg">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Tags -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h3>Popular Tags</h3>
+                </div>
+                <div class="d-flex flex-wrap gap-2 justify-content-center">
+                    <span class="badge bg-primary p-2">ethical hacking</span>
+                    <span class="badge bg-secondary p-2">network security</span>
+                    <span class="badge bg-success p-2">malware</span>
+                    <span class="badge bg-danger p-2">ransomware</span>
+                    <span class="badge bg-warning p-2">penetration testing</span>
+                    <span class="badge bg-info p-2">cloud security</span>
+                    <span class="badge bg-dark p-2">incident response</span>
+                    <span class="badge bg-primary p-2">vulnerability assessment</span>
+                    <span class="badge bg-secondary p-2">security awareness</span>
+                    <span class="badge bg-success p-2">compliance</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4 class="brand-identity"><i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                                class="brand-suffix">Academy</span></h4>
+                        <p>Leading provider of professional cybersecurity training and certification programs worldwide.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-widget">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to get the latest cybersecurity news and course updates.</p>
+                        <form class="mt-3">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email">
+                                <button class="btn btn-success" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+
+            <div class="text-center">
+                <p>&copy; 2026 CyberSecure Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

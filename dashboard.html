@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin dashboard for cybersecurity training platform">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <aside class="dashboard-sidebar" aria-label="Desktop dashboard navigation">
+            <p class="sidebar-overline">Control Panel</p>
+            <h1 class="sidebar-title">
+                <i class="bi bi-shield-check brand-icon"></i> CyberSecure <span class="brand-suffix">Admin</span>
+            </h1>
+            <nav class="sidebar-menu">
+                <a href="#analytics" class="menu-link is-active" data-section="analytics">Analytics</a>
+                <a href="#users" class="menu-link" data-section="users">Users</a>
+                <a href="#courses" class="menu-link" data-section="courses">Courses</a>
+                <a href="#orders" class="menu-link" data-section="orders">Orders</a>
+                <a href="#messages" class="menu-link" data-section="messages">Messages</a>
+                <a href="#settings" class="menu-link" data-section="settings">Settings</a>
+                <a href="login.html" class="menu-link logout-link">Logout</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <header class="mobile-header">
+                <button type="button" id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Open dashboard menu"
+                    aria-controls="mobileDrawer" aria-expanded="false">
+                    <span aria-hidden="true">&#9776;</span>
+                </button>
+                <h2 class="mobile-header-title">
+                    <a href="index.html"
+                        style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                            class="brand-suffix">Admin</span>
+                    </a>
+                </h2>
+            </header>
+
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile dashboard navigation">
+                <a href="#analytics" class="mobile-menu-link is-active" data-section="analytics">Analytics</a>
+                <a href="#users" class="mobile-menu-link" data-section="users">Users</a>
+                <a href="#courses" class="mobile-menu-link" data-section="courses">Courses</a>
+                <a href="#orders" class="mobile-menu-link" data-section="orders">Orders</a>
+                <a href="#messages" class="mobile-menu-link" data-section="messages">Messages</a>
+                <a href="#settings" class="mobile-menu-link" data-section="settings">Settings</a>
+                <a href="login.html" class="mobile-menu-link">Logout</a>
+            </nav>
+
+            <section class="content-shell" id="analytics">
+                <header class="content-header">
+                    <h2 id="sectionTitle">Analytics</h2>
+                    <p id="sectionMessage">Track platform performance and usage trends.</p>
+                </header>
+
+                <div class="metric-grid">
+                    <article class="metric-card">
+                        <h3>Active Users</h3>
+                        <p class="metric-value">12,480</p>
+                        <p class="metric-meta">+8.4% from previous month</p>
+                    </article>
+                    <article class="metric-card">
+                        <h3>Courses Running</h3>
+                        <p class="metric-value">68</p>
+                        <p class="metric-meta">4 new courses this cycle</p>
+                    </article>
+                    <article class="metric-card">
+                        <h3>Total Orders</h3>
+                        <p class="metric-value">3,916</p>
+                        <p class="metric-meta">Stable conversion this week</p>
+                    </article>
+                    <article class="metric-card">
+                        <h3>Unread Messages</h3>
+                        <p class="metric-value">39</p>
+                        <p class="metric-meta">11 marked high priority</p>
+                    </article>
+                </div>
+
+                <div class="panel-grid">
+                    <article class="panel-card">
+                        <h3>Overview</h3>
+                        <p>
+                            This space is intentionally minimal so each section can be expanded without changing the
+                            base
+                            dashboard structure.
+                        </p>
+                    </article>
+                    <article class="panel-card">
+                        <h3>Next Actions</h3>
+                        <ul>
+                            <li>Review course completion signals.</li>
+                            <li>Follow up on pending order confirmations.</li>
+                            <li>Respond to unread support tickets.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        (function () {
+            const body = document.body;
+            const mobileToggle = document.getElementById("mobileMenuToggle");
+            const mobileOverlay = document.getElementById("mobileMenuOverlay");
+            const mobileDrawer = document.getElementById("mobileDrawer");
+            const sectionTitle = document.getElementById("sectionTitle");
+            const sectionMessage = document.getElementById("sectionMessage");
+            const sectionLinks = document.querySelectorAll("[data-section]");
+            const mobileLinks = mobileDrawer.querySelectorAll("a");
+
+            const sectionDescriptions = {
+                analytics: "Track platform performance and usage trends.",
+                users: "Review account activity, growth, and engagement health.",
+                courses: "Manage content quality, publishing, and enrollment flow.",
+                orders: "Monitor purchase records, refunds, and billing states.",
+                messages: "Handle support inbox routing and response timing.",
+                settings: "Configure dashboard preferences and platform defaults."
+            };
+
+            function closeMobileMenu() {
+                body.classList.remove("drawer-open");
+                mobileToggle.setAttribute("aria-expanded", "false");
+            }
+
+            function openMobileMenu() {
+                body.classList.add("drawer-open");
+                mobileToggle.setAttribute("aria-expanded", "true");
+            }
+
+            function toggleMobileMenu() {
+                if (body.classList.contains("drawer-open")) {
+                    closeMobileMenu();
+                    return;
+                }
+                openMobileMenu();
+            }
+
+            function setActiveSection(targetSection) {
+                if (!targetSection) {
+                    return;
+                }
+
+                const heading = targetSection.charAt(0).toUpperCase() + targetSection.slice(1);
+                sectionTitle.textContent = heading;
+                sectionMessage.textContent = sectionDescriptions[targetSection] || "Section updated.";
+
+                sectionLinks.forEach((link) => {
+                    const isCurrent = link.getAttribute("data-section") === targetSection;
+                    link.classList.toggle("is-active", isCurrent);
+                });
+            }
+
+            mobileToggle.addEventListener("click", toggleMobileMenu);
+            mobileOverlay.addEventListener("click", closeMobileMenu);
+
+            mobileLinks.forEach((link) => {
+                link.addEventListener("click", closeMobileMenu);
+            });
+
+            sectionLinks.forEach((link) => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    setActiveSection(link.getAttribute("data-section"));
+                    closeMobileMenu();
+                });
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape") {
+                    closeMobileMenu();
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
