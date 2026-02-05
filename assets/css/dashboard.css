@@ -210,6 +210,8 @@ a {
     .mobile-header-title {
         margin: 0;
         font-size: 1.15rem;
+        flex-grow: 1;
+        justify-content: center;
     }
 
     .mobile-menu-toggle {
@@ -284,14 +286,27 @@ a {
     }
 }
 
-/* Brand Identity */
+/* Brand Identity Consistency */
+.brand-identity {
+    color: #00ff88 !important;
+    font-weight: 700 !important;
+    font-size: 1.15rem !important;
+    /* Adjusted to fit perfectly in 268px sidebar */
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    white-space: nowrap !important;
+}
+
 .brand-icon {
-    color: #00ff88;
+    color: #00ff88 !important;
     margin-right: 5px;
+    font-size: 1.25rem !important;
 }
 
 .brand-suffix {
-    color: #00ff88;
+    color: #00ff88 !important;
 }
 
 .mobile-header-title {

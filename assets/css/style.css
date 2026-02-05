@@ -3204,11 +3204,12 @@ body {
 .brand-identity {
   color: var(--accent-green) !important;
   font-weight: 700 !important;
-  font-size: 1.25rem !important;
+  font-size: 1.3rem !important;
   text-decoration: none !important;
   display: flex !important;
   align-items: center !important;
   gap: 8px !important;
+  white-space: nowrap !important;
 }
 
 .brand-identity i {

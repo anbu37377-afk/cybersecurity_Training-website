@@ -16,7 +16,9 @@
         <aside class="dashboard-sidebar" aria-label="Desktop dashboard navigation">
             <p class="sidebar-overline">Control Panel</p>
             <h1 class="sidebar-title">
-                <i class="bi bi-shield-check brand-icon"></i> CyberSecure <span class="brand-suffix">Admin</span>
+                <a href="index.html" class="brand-identity">
+                    <i class="bi bi-shield-check brand-icon"></i> CyberSecure <span class="brand-suffix">Academy</span>
+                </a>
             </h1>
             <nav class="sidebar-menu">
                 <a href="#analytics" class="menu-link is-active" data-section="analytics">Analytics</a>
@@ -35,18 +37,18 @@
                     aria-controls="mobileDrawer" aria-expanded="false">
                     <span aria-hidden="true">&#9776;</span>
                 </button>
-                <h2 class="mobile-header-title">
-                    <a href="index.html"
-                        style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
-                            class="brand-suffix">Admin</span>
-                    </a>
-                </h2>
+                <h2 class="mobile-header-title flex-grow-1 text-center">Admin Dashboard</h2>
             </header>
 
             <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
 
             <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile dashboard navigation">
+                <div class="mb-4 ps-2">
+                    <a href="index.html" class="brand-identity">
+                        <i class="bi bi-shield-check brand-icon"></i> CyberSecure <span
+                            class="brand-suffix">Academy</span>
+                    </a>
+                </div>
                 <a href="#analytics" class="mobile-menu-link is-active" data-section="analytics">Analytics</a>
                 <a href="#users" class="mobile-menu-link" data-section="users">Users</a>
                 <a href="#courses" class="mobile-menu-link" data-section="courses">Courses</a>

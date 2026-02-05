@@ -6,8 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Register for CyberSecure Academy - Start your cybersecurity training journey">
-    <meta name="keywords" content="register, sign up, cybersecurity training, student enrollment">
-    <meta name="author" content="CyberSecure Academy">
     <title>Register - CyberSecure Academy</title>
 
     <!-- Bootstrap 5 CSS -->
@@ -16,237 +14,324 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        body {
+            background-color: #0f0f23;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(0, 123, 255, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(0, 255, 136, 0.1) 0%, transparent 20%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            padding: 20px 0;
+            color: #fff;
+        }
+
+        .auth-card {
+            background: rgba(26, 26, 46, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 100%;
+            max-width: 500px;
+            margin: 20px;
+        }
+
+        .auth-header {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 25px 30px 0;
+            text-align: center;
+        }
+
+        .brand-logo {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 5px;
+            display: inline-block;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .brand-logo:hover {
+            color: #fff;
+        }
+
+        .auth-body {
+            padding: 30px;
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 12px 15px;
+            border-radius: 10px;
+        }
+
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #007bff;
+            color: #fff;
+            box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+        }
+
+        .form-label {
+            color: #a0a0b0;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .text-muted {
+            color: #a0a0b0 !important;
+        }
+
+        .input-group-text {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-right: none;
+            color: #a0a0b0;
+        }
+
+        .input-group .form-control {
+            border-left: none;
+        }
+
+        .input-group:focus-within .input-group-text {
+            border-color: #007bff;
+        }
+
+        .input-group:focus-within .form-control {
+            border-color: #007bff;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .social-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .social-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-color: #007bff;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #6c757d;
+            margin: 20px 0;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .divider::not(:empty)::before {
+            margin-right: .5em;
+        }
+
+        .divider::not(:empty)::after {
+            margin-left: .5em;
+        }
+
+        .auth-footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #a0a0b0;
+            font-size: 0.9rem;
+        }
+
+        .auth-footer a {
+            color: #00ff88;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .auth-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
+<body>
 
+    <div class="auth-card animate-fadeInUp">
+        <div class="auth-header">
+            <a href="index.html" class="text-decoration-none">
+                <div class="brand-logo">
+                    <i class="bi bi-shield-check" style="color: #00ff88;"></i> CyberSecure <span class="brand-suffix"
+                        style="color: #00ff88;">Academy</span>
+                </div>
+                <h4 class="text-white mb-0">Create Account</h4>
+                <p class="text-muted small mt-2">Join thousands of cybersecurity students</p>
+            </a>
+        </div>
 
-<!-- Main Content -->
-<main>
-    <!-- Register Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                    <div class="service-card animate-fadeInUp">
-                        <div class="card-body p-4">
-                            <!-- Brand Logo and Name -->
-                            <div class="text-center mb-4">
-                                <a href="index.html" class="text-decoration-none d-inline-flex align-items-center"
-                                    style="gap: 0.5rem;">
-                                    <i class="bi bi-shield-check brand-icon" style="font-size: 2.5rem;"></i>
-                                    <span style="font-size: 1.5rem; font-weight: 600;">
-                                        CyberSecure <span class="brand-suffix">Academy</span>
-                                    </span>
-                                </a>
-                            </div>
-
-                            <form id="registerForm">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="firstName" class="form-label">First Name</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text"><i class="bi bi-person"></i></span>
-                                            <input type="text" class="form-control" id="firstName"
-                                                placeholder="First name" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="lastName" class="form-label">Last Name</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text"><i class="bi bi-person"></i></span>
-                                            <input type="text" class="form-control" id="lastName"
-                                                placeholder="Last name" required>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email Address</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                                        <input type="email" class="form-control" id="email"
-                                            placeholder="Enter your email" required>
-                                    </div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="phone" class="form-label">Phone Number</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-telephone"></i></span>
-                                        <input type="tel" class="form-control" id="phone"
-                                            placeholder="Enter your phone number">
-                                    </div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="password" class="form-label">Password</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                                        <input type="password" class="form-control" id="password"
-                                            placeholder="Create a password" required style="border-right: none;">
-                                        <button class="btn btn-outline-secondary" type="button" id="togglePassword"
-                                            style="border-left: none; z-index: 10;">
-                                            <i class="bi bi-eye"></i>
-                                        </button>
-                                    </div>
-                                    <small class="text-muted">Password must be at least 8 characters long</small>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="confirmPassword" class="form-label">Confirm Password</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                                        <input type="password" class="form-control" id="confirmPassword"
-                                            placeholder="Confirm your password" required style="border-right: none;">
-                                        <button class="btn btn-outline-secondary" type="button"
-                                            id="toggleConfirmPassword" style="border-left: none; z-index: 10;">
-                                            <i class="bi bi-eye"></i>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="experience" class="form-label">Cybersecurity Experience</label>
-                                    <select class="form-control" id="experience" required>
-                                        <option value="">Select your experience level</option>
-                                        <option value="beginner">Beginner - Just starting</option>
-                                        <option value="intermediate">Intermediate - Some knowledge</option>
-                                        <option value="advanced">Advanced - Experienced professional</option>
-                                        <option value="expert">Expert - Industry veteran</option>
-                                    </select>
-                                </div>
-
-
-
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="terms" required>
-                                    <label class="form-check-label" for="terms">
-                                        I agree to the <a href="#" class="text-decoration-none">Terms of Service</a>
-                                        and <a href="#" class="text-decoration-none">Privacy Policy</a>
-                                    </label>
-                                </div>
-
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="newsletter">
-                                    <label class="form-check-label" for="newsletter">
-                                        Subscribe to our newsletter for cybersecurity tips and updates
-                                    </label>
-                                </div>
-
-                                <div class="d-grid mb-3">
-                                    <button type="submit" class="btn btn-primary">
-                                        <i class="bi bi-person-plus"></i> Create Account
-                                    </button>
-                                </div>
-
-                                <div class="text-center">
-                                    <p class="mb-0">Already have an account? <a href="login.html"
-                                            class="text-decoration-none">Sign in here</a></p>
-                                </div>
-                            </form>
-
-                            <!-- Social Registration -->
-                            <div class="mt-4">
-                                <div class="text-center mb-3">
-                                    <small class="text-muted">Or register with</small>
-                                </div>
-                                <div class="d-grid gap-2">
-                                    <button class="btn btn-outline-primary" type="button">
-                                        <i class="bi bi-google"></i> Google
-                                    </button>
-                                    <button class="btn btn-outline-primary" type="button">
-                                        <i class="bi bi-microsoft"></i> Microsoft
-                                    </button>
-                                    <button class="btn btn-outline-primary" type="button">
-                                        <i class="bi bi-linkedin"></i> LinkedIn
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+        <div class="auth-body">
+            <form id="registerForm">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
                     </div>
                 </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                        <input type="password" class="form-control" id="password" placeholder="Create password"
+                            required>
+                        <button class="btn btn-outline-secondary border-start-0" type="button" id="togglePassword"
+                            style="border-color: rgba(255,255,255,0.1); color: #a0a0b0;">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-check-lg"></i></span>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password"
+                            required>
+                    </div>
+                </div>
+
+                <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="terms"
+                        style="background-color: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2);" required>
+                    <label class="form-check-label text-muted small" for="terms">
+                        I agree to the <a href="#" class="text-primary">Terms of Service</a> and <a href="#"
+                            class="text-primary">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                </div>
+            </form>
+
+            <div class="divider">
+                <span class="small">Or register with</span>
+            </div>
+
+            <div class="row g-2">
+                <div class="col-6">
+                    <a href="#" class="social-btn">
+                        <i class="bi bi-google"></i> Google
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="social-btn">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="auth-footer">
+                Already have an account? <a href="login.html">Sign In</a>
             </div>
         </div>
-    </section>
+    </div>
 
-</main>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Bootstrap 5 JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom JS -->
-<script src="assets/js/main.js"></script>
+    <script>
+        // Toggle password visibility
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const passwordInput = document.getElementById('password');
+            const icon = this.querySelector('i');
 
-<script>
-    // Toggle password visibility
-    document.getElementById('togglePassword').addEventListener('click', function () {
-        const passwordInput = document.getElementById('password');
-        const icon = this.querySelector('i');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('bi-eye');
+                icon.classList.add('bi-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('bi-eye-slash');
+                icon.classList.add('bi-eye');
+            }
+        });
 
-        if (passwordInput.type === 'password') {
-            passwordInput.type = 'text';
-            icon.classList.remove('bi-eye');
-            icon.classList.add('bi-eye-slash');
-        } else {
-            passwordInput.type = 'password';
-            icon.classList.remove('bi-eye-slash');
-            icon.classList.add('bi-eye');
-        }
-    });
+        // Handle form submission
+        document.getElementById('registerForm').addEventListener('submit', function (e) {
+            e.preventDefault();
 
-    document.getElementById('toggleConfirmPassword').addEventListener('click', function () {
-        const passwordInput = document.getElementById('confirmPassword');
-        const icon = this.querySelector('i');
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const terms = document.getElementById('terms').checked;
 
-        if (passwordInput.type === 'password') {
-            passwordInput.type = 'text';
-            icon.classList.remove('bi-eye');
-            icon.classList.add('bi-eye-slash');
-        } else {
-            passwordInput.type = 'password';
-            icon.classList.remove('bi-eye-slash');
-            icon.classList.add('bi-eye');
-        }
-    });
+            if (password !== confirmPassword) {
+                alert('Passwords do not match');
+                return;
+            }
 
-    // Handle form submission
-    document.getElementById('registerForm').addEventListener('submit', function (e) {
-        e.preventDefault();
+            if (firstName && lastName && email && password && terms) {
+                // Change submit button state
+                const btn = this.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Creating account...';
+                btn.disabled = true;
 
-        // Get form values
-        const firstName = document.getElementById('firstName').value;
-        const lastName = document.getElementById('lastName').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        const confirmPassword = document.getElementById('confirmPassword').value;
-        const terms = document.getElementById('terms').checked;
-
-        // Validation
-        if (!firstName || !lastName || !email || !password || !confirmPassword) {
-            alert('Please fill in all required fields');
-            return;
-        }
-
-        if (password.length < 8) {
-            alert('Password must be at least 8 characters long');
-            return;
-        }
-
-        if (password !== confirmPassword) {
-            alert('Passwords do not match');
-            return;
-        }
-
-        if (!terms) {
-            alert('Please agree to the Terms of Service and Privacy Policy');
-            return;
-        }
-
-        // Show success message
-        alert('Registration successful! Please check your email to verify your account.');
-        // In a real application, redirect to login or dashboard
-        // window.location.href = 'login.html';
-    });
-</script>
+                // Simulate API call
+                setTimeout(() => {
+                    alert('Registration successful! Please check your email.');
+                    window.location.href = 'login.html';
+                }, 1500);
+            }
+        });
+    </script>
 </body>
 
 </html>
