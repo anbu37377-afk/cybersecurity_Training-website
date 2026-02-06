@@ -31,14 +31,14 @@ a {
 .dashboard-layout {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 268px minmax(0, 1fr);
+    grid-template-columns: 320px minmax(0, 1fr);
 }
 
 .dashboard-sidebar {
     position: sticky;
     top: 0;
     height: 100vh;
-    padding: 30px 20px;
+    padding: 30px 15px;
     background: var(--sidebar-bg);
     color: var(--sidebar-text);
 }
@@ -288,12 +288,11 @@ a {
 
 /* Brand Identity Consistency */
 .brand-identity {
-    color: #00ff88 !important;
+    color: #ffffff !important;
     font-weight: 700 !important;
-    font-size: 1.15rem !important;
-    /* Adjusted to fit perfectly in 268px sidebar */
+    font-size: 1.25rem !important;
     text-decoration: none !important;
-    display: flex !important;
+    display: inline-flex !important;
     align-items: center !important;
     gap: 8px !important;
     white-space: nowrap !important;
@@ -301,7 +300,6 @@ a {
 
 .brand-icon {
     color: #00ff88 !important;
-    margin-right: 5px;
     font-size: 1.25rem !important;
 }
 

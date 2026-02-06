@@ -14,6 +14,16 @@
   --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
 }
 
+.brand-identity {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none !important;
+}
+
 .brand-icon {
   color: var(--accent-green) !important;
 }
@@ -51,7 +61,7 @@
   color: #ffffff !important;
 }
 
-[data-theme="dark"] * {
+[data-theme="dark"] *:not(.btn):not(.btn *) {
   color: #ffffff !important;
 }
 
@@ -303,6 +313,14 @@
 
 
 /* Buttons */
+[data-theme="dark"] .btn-primary,
+[data-theme="dark"] .btn-success,
+[data-theme="dark"] .btn-info,
+[data-theme="dark"] .btn-danger,
+[data-theme="dark"] .btn-warning {
+  color: #fff !important;
+}
+
 [data-theme="dark"] .btn-outline-primary {
   border-color: var(--accent-color) !important;
   color: var(--accent-color) !important;
@@ -313,15 +331,40 @@
   color: #fff !important;
 }
 
+[data-theme="dark"] .btn-outline-light {
+  border-color: #f8f9fa !important;
+  color: #f8f9fa !important;
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] .btn-outline-light:hover {
+  background-color: #f8f9fa !important;
+  color: var(--dark-navy) !important;
+}
+
+/* Hero section outline-light buttons - ensure visibility */
+[data-theme="dark"] .hero-section .btn-outline-light,
+[data-theme="dark"] .hero-content .btn-outline-light {
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] .hero-section .btn-outline-light:hover,
+[data-theme="dark"] .hero-content .btn-outline-light:hover {
+  background-color: #ffffff !important;
+  color: #1a1a2e !important;
+}
+
 [data-theme="dark"] .btn-primary {
   background-color: var(--accent-color) !important;
   border-color: var(--accent-color) !important;
-  color: #fff !important;
 }
 
 [data-theme="dark"] .btn-primary:hover {
   background-color: var(--accent-hover) !important;
   border-color: var(--accent-hover) !important;
+  color: #fff !important;
 }
 
 /* Lists and groups */
@@ -932,7 +975,7 @@
 }
 
 /* AGGRESSIVE UNIVERSAL DARK MODE FIX - FORCE EVERYTHING WHITE */
-[data-theme="dark"] * {
+[data-theme="dark"] *:not(.btn):not(.btn *) {
   color: #ffffff !important;
 }
 
@@ -1140,52 +1183,16 @@
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
 }
 
-[data-theme="dark"] .btn-light:focus,
-[data-theme="dark"] .btn-outline-primary:focus {
-  background-color: var(--cyber-blue) !important;
-  border-color: var(--cyber-blue) !important;
-  color: #ffffff !important;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-/* Additional button fixes for View Pricing */
-[data-theme="dark"] a.btn.btn-light,
-[data-theme="dark"] a.btn.btn-outline-primary {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
-  color: #ffffff !important;
-  text-decoration: none !important;
-}
-
-[data-theme="dark"] a.btn.btn-light:hover,
-[data-theme="dark"] a.btn.btn-outline-primary:hover {
-  background-color: var(--cyber-blue) !important;
-  border-color: var(--cyber-blue) !important;
-  color: #ffffff !important;
-  text-decoration: none !important;
-}
-
-/* Force all btn-light and btn-outline-primary buttons in dark mode */
-[data-theme="dark"] .btn.btn-light,
-[data-theme="dark"] .btn.btn-outline-primary,
-[data-theme="dark"] button.btn-light,
-[data-theme="dark"] button.btn-outline-primary {
-  background-color: var(--accent-color) !important;
-  border-color: var(--accent-color) !important;
-  color: #ffffff !important;
-}
-
-[data-theme="dark"] .btn.btn-light:hover,
-[data-theme="dark"] .btn.btn-outline-primary:hover,
-[data-theme="dark"] button.btn-light:hover,
-[data-theme="dark"] button.btn-outline-primary:hover {
-  background-color: var(--cyber-blue) !important;
-  border-color: var(--cyber-blue) !important;
-  color: #ffffff !important;
+/* Ensure buttons with white backgrounds on hover have dark text */
+[data-theme="dark"] .btn-outline-light:hover,
+[data-theme="dark"] .btn-outline-light:active,
+[data-theme="dark"] .navbar-dark .btn-outline-light:hover {
+  color: var(--dark-navy) !important;
+  background-color: #ffffff !important;
 }
 
 /* AGGRESSIVE DARK MODE TEXT VISIBILITY FIX */
-[data-theme="dark"] * {
+[data-theme="dark"] *:not(.btn):not(.btn *) {
   color: #ffffff !important;
 }
 
@@ -1201,9 +1208,8 @@
   color: var(--cyber-blue) !important;
 }
 
-/* Preserve button text colors */
-[data-theme="dark"] .btn,
-[data-theme="dark"] button {
+/* Ensure buttons have white text by default, but allow overrides */
+[data-theme="dark"] .btn:not(:hover):not(.btn-light):not(.btn-outline-light) {
   color: #ffffff !important;
 }
 
