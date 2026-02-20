@@ -73,9 +73,9 @@
 
         .form-control:focus {
             background: rgba(255, 255, 255, 0.1);
-            border-color: #007bff;
+            border-color: var(--cyber-blue);
             color: #fff;
-            box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+            box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.14);
         }
 
         .form-label {
@@ -100,18 +100,18 @@
         }
 
         .input-group:focus-within .input-group-text {
-            border-color: #007bff;
+            border-color: var(--cyber-blue);
         }
 
         .input-group:focus-within .form-control {
-            border-color: #007bff;
+            border-color: var(--cyber-blue);
         }
 
         .btn-primary {
-            background: linear-gradient(45deg, #007bff, #0056b3);
-            border: none;
+            background: var(--cyber-blue);
+            border: 2px solid var(--cyber-blue);
             padding: 12px;
-            border-radius: 10px;
+            border-radius: 50px;
             font-weight: 600;
             letter-spacing: 0.5px;
             margin-top: 10px;
@@ -119,8 +119,10 @@
         }
 
         .btn-primary:hover {
+            background: var(--color-primary-hover);
+            border-color: var(--color-primary-hover);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.35);
         }
 
         .social-btn {
@@ -140,7 +142,7 @@
         .social-btn:hover {
             background: rgba(255, 255, 255, 0.1);
             color: #fff;
-            border-color: #007bff;
+            border-color: var(--cyber-blue);
         }
 
         .divider {
@@ -174,7 +176,7 @@
         }
 
         .auth-footer a {
-            color: #00ff88;
+            color: var(--accent-green);
             text-decoration: none;
             font-weight: 600;
         }

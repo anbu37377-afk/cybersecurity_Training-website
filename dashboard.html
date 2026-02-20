@@ -58,17 +58,17 @@
                 <a href="login.html" class="mobile-menu-link">Logout</a>
             </nav>
 
-            <section class="content-shell" id="analytics">
+            <section class="content-shell is-visible" id="analytics">
                 <header class="content-header">
-                    <h2 id="sectionTitle">Analytics</h2>
-                    <p id="sectionMessage">Track platform performance and usage trends.</p>
+                    <h2>Analytics</h2>
+                    <p>Track platform performance and usage trends.</p>
                 </header>
 
                 <div class="metric-grid">
                     <article class="metric-card">
                         <h3>Active Users</h3>
                         <p class="metric-value">12,480</p>
-                        <p class="metric-meta">+8.4% from previous month</p>
+                        <p class="metric-meta text-success">+8.4% from previous month</p>
                     </article>
                     <article class="metric-card">
                         <h3>Courses Running</h3>
@@ -83,26 +83,250 @@
                     <article class="metric-card">
                         <h3>Unread Messages</h3>
                         <p class="metric-value">39</p>
-                        <p class="metric-meta">11 marked high priority</p>
+                        <p class="metric-meta text-danger">11 marked high priority</p>
                     </article>
                 </div>
 
                 <div class="panel-grid">
+                    <article class="panel-card" style="grid-column: span 2;">
+                        <h3>Recent Activity</h3>
+                        <div class="dashboard-table-container">
+                            <table class="dashboard-table">
+                                <thead>
+                                    <tr>
+                                        <th>Activity</th>
+                                        <th>Category</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>New user registration: Michael Chen</td>
+                                        <td>Users</td>
+                                        <td>2026-02-20</td>
+                                        <td><span class="status-badge status-active">New</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Order #8429 completed: Ethical Hacking</td>
+                                        <td>Sales</td>
+                                        <td>2026-02-20</td>
+                                        <td><span class="status-badge status-completed">Success</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Course "Cloud Security" updated</td>
+                                        <td>Content</td>
+                                        <td>2026-02-19</td>
+                                        <td><span class="status-badge status-active">Updated</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Critical bug report in login form</td>
+                                        <td>Support</td>
+                                        <td>2026-02-19</td>
+                                        <td><span class="status-badge status-blocked">High Priority</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-shell" id="users">
+                <header class="content-header">
+                    <h2>Users Management</h2>
+                    <p>Review account activity, growth, and engagement health.</p>
+                </header>
+                <div class="panel-card">
+                    <h3>All Users</h3>
+                    <div class="dashboard-table-container">
+                        <table class="dashboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Michael Chen</td>
+                                    <td>michael@gmail.com</td>
+                                    <td>Student</td>
+                                    <td><span class="status-badge status-active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Sarah Johnson</td>
+                                    <td>sarah.j@outlook.com</td>
+                                    <td>Instructor</td>
+                                    <td><span class="status-badge status-active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>David Smith</td>
+                                    <td>dsmith@cybersecure.com</td>
+                                    <td>Admin</td>
+                                    <td><span class="status-badge status-active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Amanda Lee</td>
+                                    <td>alee@yahoo.com</td>
+                                    <td>Student</td>
+                                    <td><span class="status-badge status-blocked">Blocked</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-shell" id="courses">
+                <header class="content-header">
+                    <h2>Course Catalog</h2>
+                    <p>Manage content quality, publishing, and enrollment flow.</p>
+                </header>
+                <div class="metric-grid">
+                    <article class="metric-card">
+                        <h3>Total Courses</h3>
+                        <p class="metric-value">68</p>
+                    </article>
+                    <article class="metric-card">
+                        <h3>Avg. Completion</h3>
+                        <p class="metric-value">72%</p>
+                    </article>
+                    <article class="metric-card">
+                        <h3>Total Students</h3>
+                        <p class="metric-value">12,480</p>
+                    </article>
+                    <article class="metric-card">
+                        <h3>Course Revenue</h3>
+                        <p class="metric-value">$42.8k</p>
+                    </article>
+                </div>
+                <div class="panel-card">
+                    <h3>Course List</h3>
+                    <div class="dashboard-table-container">
+                        <table class="dashboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Enrolled</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ethical Hacking Masterclass</td>
+                                    <td>1,240</td>
+                                    <td>$99</td>
+                                    <td><span class="status-badge status-active">Published</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Cybersecurity Fundamentals</td>
+                                    <td>3,450</td>
+                                    <td>Free</td>
+                                    <td><span class="status-badge status-active">Published</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Cloud Security Specialist</td>
+                                    <td>890</td>
+                                    <td>$129</td>
+                                    <td><span class="status-badge status-pending">Draft</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-shell" id="orders">
+                <header class="content-header">
+                    <h2>Order History</h2>
+                    <p>Monitor purchase records, refunds, and billing states.</p>
+                </header>
+                <div class="panel-card">
+                    <h3>Recent Transactions</h3>
+                    <div class="dashboard-table-container">
+                        <table class="dashboard-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#8429</td>
+                                    <td>Michael Chen</td>
+                                    <td>$99.00</td>
+                                    <td><span class="status-badge status-completed">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#8428</td>
+                                    <td>John Doe</td>
+                                    <td>$49.00</td>
+                                    <td><span class="status-badge status-pending">Pending</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-shell" id="messages">
+                <header class="content-header">
+                    <h2>Inbox</h2>
+                    <p>Handle support inbox routing and response timing.</p>
+                </header>
+                <div class="panel-card">
+                    <h3>Active Conversations</h3>
+                    <div class="dashboard-table-container">
+                        <table class="dashboard-table">
+                            <thead>
+                                <tr>
+                                    <th>From</th>
+                                    <th>Subject</th>
+                                    <th>Received</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Michael Chen</td>
+                                    <td>Cannot access lab 4</td>
+                                    <td>2 hours ago</td>
+                                    <td><button class="status-badge status-active"
+                                            style="border:none; cursor:pointer;">Reply</button></td>
+                                </tr>
+                                <tr>
+                                    <td>System Info</td>
+                                    <td>Weekly backup successful</td>
+                                    <td>6 hours ago</td>
+                                    <td><button class="status-badge status-completed"
+                                            style="border:none; cursor:pointer;">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-shell" id="settings">
+                <header class="content-header">
+                    <h2>General Settings</h2>
+                    <p>Configure dashboard preferences and platform defaults.</p>
+                </header>
+                <div class="panel-grid">
                     <article class="panel-card">
-                        <h3>Overview</h3>
-                        <p>
-                            This space is intentionally minimal so each section can be expanded without changing the
-                            base
-                            dashboard structure.
-                        </p>
+                        <h3>Profile Settings</h3>
+                        <p>Change admin credentials and update profile information.</p>
                     </article>
                     <article class="panel-card">
-                        <h3>Next Actions</h3>
-                        <ul>
-                            <li>Review course completion signals.</li>
-                            <li>Follow up on pending order confirmations.</li>
-                            <li>Respond to unread support tickets.</li>
-                        </ul>
+                        <h3>System Settings</h3>
+                        <p>Configure automated backups, email notifications and security rules.</p>
                     </article>
                 </div>
             </section>
@@ -120,14 +344,6 @@
             const sectionLinks = document.querySelectorAll("[data-section]");
             const mobileLinks = mobileDrawer.querySelectorAll("a");
 
-            const sectionDescriptions = {
-                analytics: "Track platform performance and usage trends.",
-                users: "Review account activity, growth, and engagement health.",
-                courses: "Manage content quality, publishing, and enrollment flow.",
-                orders: "Monitor purchase records, refunds, and billing states.",
-                messages: "Handle support inbox routing and response timing.",
-                settings: "Configure dashboard preferences and platform defaults."
-            };
 
             function closeMobileMenu() {
                 body.classList.remove("drawer-open");
@@ -152,10 +368,18 @@
                     return;
                 }
 
-                const heading = targetSection.charAt(0).toUpperCase() + targetSection.slice(1);
-                sectionTitle.textContent = heading;
-                sectionMessage.textContent = sectionDescriptions[targetSection] || "Section updated.";
+                // Hide all sections
+                document.querySelectorAll(".content-shell").forEach(section => {
+                    section.classList.remove("is-visible");
+                });
 
+                // Show target section
+                const targetEl = document.getElementById(targetSection);
+                if (targetEl) {
+                    targetEl.classList.add("is-visible");
+                }
+
+                // Update active link state
                 sectionLinks.forEach((link) => {
                     const isCurrent = link.getAttribute("data-section") === targetSection;
                     link.classList.toggle("is-active", isCurrent);

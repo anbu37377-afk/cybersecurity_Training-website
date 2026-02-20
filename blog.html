@@ -125,9 +125,9 @@
     <!-- Main Content -->
     <main>
         <!-- Page Header -->
-        <section class="hero-section">
+        <section class="hero-section inner-hero">
             <div class="container">
-                <div class="row align-items-center min-vh-100">
+                <div class="row align-items-center">
                     <div class="col-lg-8 mx-auto text-center hero-content">
                         <h1 class="hero-title animate-fadeInUp">Cybersecurity Blog</h1>
                         <p class="hero-subtitle animate-fadeInUp">Latest insights, news, and expert tips from the world
@@ -140,24 +140,29 @@
         <!-- Search and Filter Section -->
         <section class="py-4 bg-light">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search articles..."
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-5">
+                        <form class="d-flex align-items-center">
+                            <input class="form-control me-2 rounded-pill" type="search" placeholder="Search articles..."
                                 aria-label="Search">
-                            <button class="btn btn-primary" type="submit">
+                            <button
+                                class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center"
+                                type="submit" style="width: 45px; height: 45px; flex-shrink: 0;">
                                 <i class="bi bi-search"></i>
                             </button>
                         </form>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
-                            <button class="btn btn-outline-primary category-btn active" data-category="all">All</button>
-                            <button class="btn btn-outline-primary category-btn" data-category="news">News</button>
-                            <button class="btn btn-outline-primary category-btn"
+                    <div class="col-lg-7">
+                        <div class="d-flex flex-wrap gap-2 justify-content-lg-end align-items-center">
+                            <button class="btn btn-outline-primary category-btn active rounded-pill px-4"
+                                data-category="all">All</button>
+                            <button class="btn btn-outline-primary category-btn rounded-pill px-4"
+                                data-category="news">News</button>
+                            <button class="btn btn-outline-primary category-btn rounded-pill px-4"
                                 data-category="tutorials">Tutorials</button>
-                            <button class="btn btn-outline-primary category-btn" data-category="tips">Tips</button>
-                            <button class="btn btn-outline-primary category-btn"
+                            <button class="btn btn-outline-primary category-btn rounded-pill px-4"
+                                data-category="tips">Tips</button>
+                            <button class="btn btn-outline-primary category-btn rounded-pill px-4"
                                 data-category="threats">Threats</button>
                         </div>
                     </div>
