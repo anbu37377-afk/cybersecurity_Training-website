@@ -3408,11 +3408,19 @@ body {
 .btn-outline-secondary,
 .btn-outline-danger,
 .btn-outline-info,
-.btn-outline-warning,
-.btn-outline-light:not(.theme-toggle) {
+.btn-outline-warning {
   background: transparent;
   border: 2px solid var(--cyber-blue);
   color: var(--cyber-blue);
+  padding: 6px 20px;
+  font-size: 0.9rem;
+  box-shadow: none;
+}
+
+.btn-outline-light:not(.theme-toggle) {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
   padding: 6px 20px;
   font-size: 0.9rem;
   box-shadow: none;
@@ -3424,11 +3432,17 @@ body {
 .btn-outline-secondary:hover,
 .btn-outline-danger:hover,
 .btn-outline-info:hover,
-.btn-outline-warning:hover,
-.btn-outline-light:not(.theme-toggle):hover {
+.btn-outline-warning:hover {
   background: rgba(13, 110, 253, 0.12);
   border-color: var(--color-primary-hover);
   color: var(--color-primary-hover);
+  transform: translateY(-2px);
+}
+
+.btn-outline-light:not(.theme-toggle):hover {
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+  color: var(--dark-navy) !important;
   transform: translateY(-2px);
 }
 
