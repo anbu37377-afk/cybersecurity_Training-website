@@ -3778,6 +3778,15 @@ body {
   transform: translateY(-3px);
 }
 
+html[data-theme="light"] .trainer-social-icons a {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+html[data-theme="light"] .trainer-social-icons a:hover {
+  color: #ffffff;
+}
+
 /* ==================== BACK TO TOP ==================== */
 .back-to-top {
   position: fixed;
@@ -4392,7 +4401,7 @@ body {
 /* Testimonial alignment */
 .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   align-items: stretch;
 }
@@ -4544,6 +4553,35 @@ body {
   transform: translateX(5px);
 }
 
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .cta-banner-actions {
+    justify-content: center !important;
+    width: 100%;
+    align-items: center;
+  }
+
+  .cta-banner-actions .btn-success {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .partner-card {
+    height: 100%;
+  }
+
+  .partner-card h6 {
+    min-height: 2.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+  }
+}
 /* Mobile-first responsive adjustments */
 @media (max-width: 768px) {
   .section-header h2 {

@@ -14,6 +14,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        (function () {
+            try {
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
 
     <style>
         body {
@@ -185,12 +195,98 @@
             text-decoration: underline;
         }
 
+        .auth-body a:not(.social-btn):not(.btn) {
+            transition: color 0.2s ease, text-decoration-color 0.2s ease;
+        }
+
+        .auth-body a:not(.social-btn):not(.btn):hover,
+        .auth-footer a:hover {
+            color: var(--accent-green) !important;
+            text-decoration: underline;
+        }
+
         /* Password toggle fix */
         .password-toggle {
             cursor: pointer;
             z-index: 10;
             background: transparent;
             border: none;
+        }
+
+        html[data-theme="light"] body {
+            background-color: #f3f6fb;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(0, 123, 255, 0.08) 0%, transparent 24%),
+                radial-gradient(circle at 90% 80%, rgba(0, 255, 136, 0.08) 0%, transparent 24%);
+            color: #0f172a;
+        }
+
+        html[data-theme="light"] .auth-card {
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(15, 23, 42, 0.12);
+        }
+
+        html[data-theme="light"] .auth-header {
+            background: rgba(15, 23, 42, 0.03);
+        }
+
+        html[data-theme="light"] .brand-logo,
+        html[data-theme="light"] .auth-header .text-white {
+            color: #0f172a !important;
+        }
+
+        html[data-theme="light"] .form-label,
+        html[data-theme="light"] .auth-footer,
+        html[data-theme="light"] .text-muted {
+            color: #64748b !important;
+        }
+
+        html[data-theme="light"] .form-control {
+            background: #ffffff;
+            border-color: #cbd5e1;
+            color: #0f172a;
+        }
+
+        html[data-theme="light"] .form-control:focus {
+            background: #ffffff;
+            color: #0f172a;
+        }
+
+        html[data-theme="light"] .input-group-text {
+            background: #f8fafc;
+            border-color: #cbd5e1;
+            color: #64748b;
+        }
+
+        html[data-theme="light"] #togglePassword {
+            border-color: #cbd5e1 !important;
+            color: #64748b !important;
+            background: #f8fafc;
+        }
+
+        html[data-theme="light"] .divider {
+            color: #94a3b8;
+        }
+
+        html[data-theme="light"] .divider::before,
+        html[data-theme="light"] .divider::after {
+            border-bottom-color: rgba(15, 23, 42, 0.12);
+        }
+
+        html[data-theme="light"] .social-btn {
+            background: #ffffff;
+            border-color: #cbd5e1;
+            color: #0f172a;
+        }
+
+        html[data-theme="light"] .social-btn:hover {
+            background: #eff6ff;
+            color: #0f172a;
+        }
+
+        html[data-theme="light"] .form-check-input {
+            background-color: #ffffff !important;
+            border-color: #94a3b8 !important;
         }
     </style>
 </head>
