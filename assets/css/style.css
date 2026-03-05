@@ -3446,6 +3446,19 @@ body {
   transform: translateY(-2px);
 }
 
+/* Light mode: keep CTA secondary buttons visible on blue banner blocks */
+html[data-theme="light"] .bg-primary.text-white.rounded-3.p-5.text-center .btn-light {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+html[data-theme="light"] .bg-primary.text-white.rounded-3.p-5.text-center .btn-light:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: var(--dark-navy);
+}
+
 .btn-link {
   color: var(--cyber-blue);
   font-weight: 600;
